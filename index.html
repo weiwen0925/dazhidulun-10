@@ -1414,4 +1414,57 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C10P14:END-->
+<!--WY-C10P15:BEGIN-->
+<style id="wy-c10p15-css">
+.c10p15-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c10p15-fabbox.show{display:block;}
+.c10p15-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c10p15-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c10p15-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c10p15-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c10p15-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c10p15-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c10p15-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c10p15-modal.open{display:flex;}
+.c10p15-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c10p15-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c10p15-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c10p15-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c10p15-close:hover{background:#e3d5b8;}
+.c10p15-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c10p15-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c10p15-tbl th,.c10p15-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c10p15-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c10p15-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c10p15-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c10p15-tbl b{color:#8b2500;}
+.c10p15-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c10p15-note b{color:#8b2500;}
+@media(max-width:900px){.c10p15-fabbox{right:14px;}.c10p15-tbl{font-size:11.5px;}.c10p15-card{padding:26px 14px 16px;}}
+</style>
+<div class="c10p15-fabbox" id="c10p15Box"><button class="c10p15-btn" id="c10p15Btn" type="button" aria-label="開啟全景總表"><span class="c10p15-ic">▦</span><span class="c10p15-ls"><span class="c10p15-l1">本品 · 一切世界皆集十四問</span><span class="c10p15-l2">根器光譜五道六道教判 · 一念心具十法界</span></span></button></div><div class="c10p15-modal" id="c10p15Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c10p15-card"><button class="c10p15-close" id="c10p15Close" type="button" aria-label="關閉">×</button><h3>卷十·第十五品 一切世界皆集 · 全景總表</h3><p class="sub">卷十・第十五品｜十四問答根器光譜非名單・盡來悖論無邊無量・揵闥婆調柔阿修羅福罪相參・五道六道應有六道</p><table class="c10p15-tbl"><caption>一、十四問答架構總覽（本品主軸）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>名相非名單</td><td>與會名單是一張業力容量與受法能力的根器光譜圖，智慧×福德雙軸座標</td></tr><tr><td>三重認識論</td><td>觀真諦（法性空破實有自性）觀俗諦（緣起立相待假名）觀中道（不壞假名而說實相）</td></tr><tr><td>法會邊界之辯</td><td>盡來悖論（問一）菩薩遠來四驅力（問二）大集為信（問三）</td></tr><tr><td>三界天系與人天再界定</td><td>利根自知來（問四至七）沙門婆羅門過濾機制（問八九）</td></tr></tbody></table><table class="c10p15-tbl"><caption>二、法會邊界與三界天系</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>盡來悖論</td><td>諸佛世界無邊無量，若盡來者便為有邊，無量的真正面貌是分布而非集中</td></tr><tr><td>菩薩遠來四驅力</td><td>宿緣（跨越時空師徒緣分）本願（內建誓願聞法即赴）身力（物理勞動轉福德）示現（借遠激近）</td></tr><tr><td>大集為信</td><td>般若甚深難知難解不可思議，貴重大人到來令新發意者心得信樂</td></tr><tr><td>三界權力三角</td><td>釋提桓因（地護法順緣）魔王波旬（欲障法逆增上緣）大梵天王（定住法我慢須破）</td></tr><tr><td>梵世界感官機制</td><td>上界諸天無覺觀難聞，梵世界有四識易聞，上界天人見佛聽法皆須借梵世界感官取用</td></tr></tbody></table><table class="c10p15-tbl"><caption>三、非人光譜與五道六道教判</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>揵闥婆調柔</td><td>諸天伎人隨逐諸天其心柔軟福德力小減諸天，柔軟心才是載道之器</td></tr><tr><td>阿修羅業因悖論</td><td>善因（持戒施福）疊加惡緣（惡心鬪諍），福多罪少的疊加態證成法不孤起</td></tr><tr><td>三惡道認知封鎖</td><td>地獄大苦心亂畜生愚癡覆心餓鬼飢渴火燒身，教學性排除而非存在性否定</td></tr><tr><td>鬼神亦具性空智</td><td>佛不說攝乃迦旃延子部派所說，假名不縛實體正因無自性故能破暗顯現為得道者</td></tr><tr><td>五道六道教判</td><td>三惡道一向是罪處，福多罪少者（阿修羅）須別立，論主主張應有六道以經為本論為參</td></tr></tbody></table><p class="c10p15-note">般若法會的與會名單並非一場歷史事件的紀錄，而是「<b>一念心所具十法界</b>」的解剖圖與認知模型。一切法界眾生皆屬緣起顯現無實體自性，故順可度逆可度福可轉罪可破——不離緣起，當下這一念清淨心，即是般若會。</p></div></div>
+<script id="wy-c10p15-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c10p15Btn"),BOX=document.getElementById("c10p15Box"),MODAL=document.getElementById("c10p15Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=14;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#ytFloat,#vidFab,.vid-fab,#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c10p15Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C10P15:END-->
 </body></html>
