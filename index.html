@@ -1202,4 +1202,57 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C10P10:END-->
+<!--WY-C10P11:BEGIN-->
+<style id="wy-c10p11-css">
+.c10p11-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c10p11-fabbox.show{display:block;}
+.c10p11-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c10p11-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c10p11-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c10p11-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c10p11-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c10p11-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c10p11-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c10p11-modal.open{display:flex;}
+.c10p11-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c10p11-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c10p11-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c10p11-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c10p11-close:hover{background:#e3d5b8;}
+.c10p11-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c10p11-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c10p11-tbl th,.c10p11-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c10p11-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c10p11-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c10p11-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c10p11-tbl b{color:#8b2500;}
+.c10p11-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c10p11-note b{color:#8b2500;}
+@media(max-width:900px){.c10p11-fabbox{right:14px;}.c10p11-tbl{font-size:11.5px;}.c10p11-card{padding:26px 14px 16px;}}
+</style>
+<div class="c10p11-fabbox" id="c10p11Box"><button class="c10p11-btn" id="c10p11Btn" type="button" aria-label="開啟全景總表"><span class="c10p11-ic">▦</span><span class="c10p11-ls"><span class="c10p11-l1">本品 · 十號功德論</span><span class="c10p11-l2">戰士無畏契真諦 · 御者柔軟顯俗諦</span></span></button></div><div class="c10p11-modal" id="c10p11Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c10p11-card"><button class="c10p11-close" id="c10p11Close" type="button" aria-label="關閉">×</button><h3>卷十·第十一品 釋初品中十號功德 · 全景總表</h3><p class="sub">卷十・第十一品｜以德立名・二諦雙軌・內在戰士・慈悲御者・中道統攝</p><table class="c10p11-tbl"><caption>一、十號辯證骨架（命題—反題—合題·本品主骨架）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>核心經文</td><td>諸出家、在家菩薩，以供養具供養「<b>多陀阿伽度、阿羅呵、三藐三佛陀</b>」三號標舉，預示十號並非偶然羅列</td></tr><tr><td>論主功德頌</td><td>每號偈句皆以「<b>以是故名佛</b>」作結，先陳功德、後立名號——十號真正主詞是「德」而非「名」</td></tr><tr><td>二諦密碼</td><td>《中論》「諸佛依二諦，為眾生說法」——真諦破凡夫執有，俗諦破二乘執空，兩諦交會即中道，是解碼十號的唯一密碼</td></tr><tr><td>命題·真諦四號</td><td>內在戰士——如來、應供、正遍知、明行足，構成真諦性空的自證閉環</td></tr><tr><td>反題·俗諦五號</td><td>慈悲御者——善逝、世間解、無上士、調御丈夫、天人師，構成俗諦緣起的利他工程</td></tr><tr><td>合題·第十號佛</td><td>動與不動的交匯——「<b>三世動不動，盡及不盡法</b>」，二諦收攝為中道，辯證統一</td></tr></tbody></table><table class="c10p11-tbl"><caption>二、內在戰士與慈悲御者·九號逐一解構（第二維度）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>如來、應供（一二號）</td><td>如實而來，無生無滅；忍鎧精進弓智慧箭破憍慢賊，故堪受一切供養</td></tr><tr><td>正遍知、明行足（三四號）</td><td>定實不可變地知四諦，正而遍；三明清淨行具足，目足雙運收尾真諦軌道</td></tr><tr><td>善逝（第五號）</td><td>自得妙道去而不獨住涅槃，方便說、愍念一切——「<b>真諦轉俗諦</b>」的樞紐一號</td></tr><tr><td>世間解、無上士（六七號）</td><td>知世所從來、所滅道，為度化地圖；禪戒智等眼無及況出上，為福田資格</td></tr><tr><td>調御丈夫、天人師（八九號）</td><td>大悲軟善教調御剛強眾生；無漏智慧說最上解脫，普世導師</td></tr><tr><td>修證地圖三階</td><td>自利基石（佛／阿羅訶）→利他工具（世間解／明行足／調御丈夫）→古道古徑（如來／善逝），全圖閉合</td></tr></tbody></table><table class="c10p11-tbl"><caption>三、中道統攝與修證心法（含中觀合題）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>羅什譯詞抉擇</td><td>拆分 Puruṣa-damya-sārathi 為「阿耨多羅」＋「富樓沙曇藐」，強化自證極致與利他善巧的雙軌分工</td></tr><tr><td>跨乘判教矩陣</td><td>十號將阿含系統嫁接入大乘空宗內核——「殺賊」引申破法執，「方便說」成大乘標配</td></tr><tr><td>八不中道呼應</td><td>第十號「悉知」二諦而不落一邊，對應《中論》「不生不滅、不常不斷、不一不異、不來不出」</td></tr><tr><td>動靜一如</td><td>動指俗諦緣起流轉（生滅盡法），不動指真諦性空寂靜（無生無滅不盡法），唯佛悉知能同時納入覺照</td></tr><tr><td>總持結論</td><td>「<b>自證性空斷煩惱，利他緣起度眾生</b>」——十號非靜態名單，而是菩薩道行者的動態建築學</td></tr></tbody></table><p class="c10p11-note">如來十號向來被誤讀為十個孤立的讚美詞，龍樹菩薩卻以一首功德頌揭示其「以德立名」的隱藏邏輯：前四號走真諦，鍛造戰士般不可動搖的空性內核；中五號走俗諦，展開御者般柔軟周到的度化手腕；第十號「佛」則以「三世動不動」一句，將二軌收攝為辯證統一的中道。<b>戰士的無畏契入真諦，御者的柔軟開展俗諦</b>，二者於「悉知」一念中朗然並現——這正是龍樹將部派名相重新嵌入中觀二諦架構的關鍵轉折，也是全篇「動與不動之間圓滿中道」的終極修證地圖。</p></div></div>
+<script id="wy-c10p11-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c10p11Btn"),BOX=document.getElementById("c10p11Box"),MODAL=document.getElementById("c10p11Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=10;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#ytFloat,#vidFab,.vid-fab,#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c10p11Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C10P11:END-->
 </body></html>
