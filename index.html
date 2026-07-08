@@ -1096,4 +1096,57 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C10P8:END-->
+<!--WY-C10P9:BEGIN-->
+<style id="wy-c10p9-css">
+.c10p9-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c10p9-fabbox.show{display:block;}
+.c10p9-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c10p9-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c10p9-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c10p9-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c10p9-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c10p9-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c10p9-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c10p9-modal.open{display:flex;}
+.c10p9-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c10p9-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c10p9-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c10p9-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c10p9-close:hover{background:#e3d5b8;}
+.c10p9-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c10p9-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c10p9-tbl th,.c10p9-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c10p9-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c10p9-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c10p9-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c10p9-tbl b{color:#8b2500;}
+.c10p9-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c10p9-note b{color:#8b2500;}
+@media(max-width:900px){.c10p9-fabbox{right:14px;}.c10p9-tbl{font-size:11.5px;}.c10p9-card{padding:26px 14px 16px;}}
+</style>
+<div class="c10p9-fabbox" id="c10p9Box"><button class="c10p9-btn" id="c10p9Btn" type="button" aria-label="開啟全景總表"><span class="c10p9-ic">▦</span><span class="c10p9-ls"><span class="c10p9-l1">本品 · 華滿十方三層透鏡</span><span class="c10p9-l2">現象目的本體 · 性空無定相小大由心轉</span></span></button></div><div class="c10p9-modal" id="c10p9Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c10p9-card"><button class="c10p9-close" id="c10p9Close" type="button" aria-label="關閉">×</button><h3>卷十·第九品 所散蓮華滿東方諸佛世界 · 全景總表</h3><p class="sub">卷十・第九品｜華少世界多云何滿・八大自在物理突破・大福田觀業果乘數・性空無定相氣球隱喻</p><table class="c10p9-tbl"><caption>一、三層觀測透鏡總覽（本品主軸）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>第一層現象界</td><td>佛神通力故，八種自恣變化法——大能令小小能令大，回應「如何辦到」</td></tr><tr><td>第二層目的論</td><td>示眾生未來福報、勸東方菩薩殖福於佛田，業果視覺化，回應「為何而做」</td></tr><tr><td>第三層本體論</td><td>中論真俗二諦，真諦法無自性俗諦緣起甚深，回應「何以可能」</td></tr><tr><td>全息解析</td><td>三層層層遞進——第一層說明可能，第二層揭示必要，第三層證成必然</td></tr></tbody></table><table class="c10p9-tbl"><caption>二、現象突破與目的教學</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>八種自恣變化法</td><td>大能令小小能令大／輕能令重重能令輕／自在無礙隨意所到／能動大地所願能辦</td></tr><tr><td>破除定性</td><td>物質屬性在聖者層次不再是絕對值，而是可雙向操控的可變參數</td></tr><tr><td>業果實況轉播</td><td>小華對應因滿世界對應果，把看不見的業果法則轉譯成看得見的圖像</td></tr><tr><td>大福田觀</td><td>種子能否成長端視所依之田，佛為法界至高福田，田勝故果增</td></tr><tr><td>轉物的自在心</td><td>廣大願力攝持微小供養，心量無限時資源匱乏（華少）不再是限制</td></tr></tbody></table><table class="c10p9-tbl"><caption>三、中觀本體論解構</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>真諦大小無定性</td><td>花必小世界必大是相待假名，若花真有小的自性則神通亦無法轉變它</td></tr><tr><td>性空無定相</td><td>氣球隱喻，內部並無固定實體，正因本質為空才賦予無限擴張的絕對潛力</td></tr><tr><td>俗諦緣起甚深</td><td>因果並非簡單線性疊加，而是多重緣起條件交織共振的網絡</td></tr><tr><td>緣起方程式</td><td>微小之因（小華）＋超級增上緣（佛陀自在神力大福田）＝無限大果（彌滿恒沙世界）</td></tr><tr><td>真俗二諦交融</td><td>因性空所以緣起得以發生，因緣起確實成就反過來證明物質確實性空</td></tr></tbody></table><p class="c10p9-note">一華一世界並非浪漫的隱喻，而是建立在緣起性空之上最精確的本體論實相。<b>物理是性空的現象，心法是轉物的願力，目的是教化的慈悲，本體是緣起的真如</b>——四者一體，方成「華滿十方」。</p></div></div>
+<script id="wy-c10p9-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c10p9Btn"),BOX=document.getElementById("c10p9Box"),MODAL=document.getElementById("c10p9Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=8;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#ytFloat,#vidFab,.vid-fab,#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c10p9Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C10P9:END-->
 </body></html>
