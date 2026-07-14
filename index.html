@@ -2110,4 +2110,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH10P3:END-->
+<!--WY-BH10P4:BEGIN-->
+<style id="wy-bh10p4-css">
+.bh10p4-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh10p4-fabbox.show{display:block;}
+.bh10p4-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh10p4-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh10p4-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh10p4-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh10p4-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh10p4-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh10p4-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh10p4-modal.open{display:flex;}
+.bh10p4-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh10p4-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh10p4-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh10p4-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh10p4-close:hover{background:#dde2e6;}
+.bh10p4-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh10p4-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh10p4-tbl th,.bh10p4-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh10p4-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh10p4-tbl thead th:nth-child(1){width:32%;}.bh10p4-tbl thead th:nth-child(2){width:41%;}.bh10p4-tbl thead th:nth-child(3){width:27%;}
+.bh10p4-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh10p4-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh10p4-guan{background:#eef2f5;color:#37505f;}
+.bh10p4-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh10p4-tbl tbody tr:nth-child(even) td.bh10p4-guan{background:#e8eef2;}
+.bh10p4-tbl tbody tr:nth-child(even) td.bh10p4-qa{background:#e7ecdb;}
+.bh10p4-tbl b{color:#8b2500;}
+.bh10p4-guan b{color:#2f6b5a;}
+.bh10p4-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh10p4-note b{color:#8b2500;}
+@media(max-width:900px){.bh10p4-fabbox{right:14px;}.bh10p4-tbl{font-size:11px;}.bh10p4-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh10p4-fabbox" id="bh10p4Box"><button class="bh10p4-btn" id="bh10p4Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh10p4-ic">譯</span><span class="bh10p4-ls"><span class="bh10p4-l1">本品 · 原文·白話·中觀</span><span class="bh10p4-l2">白話翻譯表</span></span></button></div><div class="bh10p4-modal" id="bh10p4Modal" role="dialog" aria-modal="true"><div class="bh10p4-card"><button class="bh10p4-close" id="bh10p4Close" type="button" aria-label="關閉">×</button><h3>卷十 · 第4品 白話翻譯表（集散品·凡聖同行三重時空悖論）</h3><p class="sub">原文↔白話↔中觀概念 逐段對照 · 大智度論卷十・集散品第四</p><table class="bh10p4-tbl"><caption>集散品·凡聖同行三重時空悖論 · 原文｜白話翻譯｜中觀概念（共9段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh10p4-src">爾時，普明菩薩從寶積佛受千葉金色蓮花，與無數出家、在家菩薩，及諸童男、童女，俱共發引。</td><td>那時，普明菩薩從寶積佛那裡接受了千葉金色蓮花，與無數出家、在家的菩薩，以及各位童男、童女，一同出發前行。</td><td class="bh10p4-guan"><b>經文標宗——集散之問，隨行大眾埋下三重時空悖論</b>——普明菩薩率無數大小、出家在家眷屬同行，這看似尋常的送行場景，其實已埋下本品「大力如何生小力」「一人如何領眾」「小者如何隨大眾遠行」三重辯證的伏筆。</td></tr><tr><td class="bh10p4-qa">問曰：是普明菩薩大力神通故應能來，是出家、在家菩薩及童男、童女，云何自致？多寶世界最在東邊，道里悠遠，是自用力行？為寶積佛力？是普明菩薩力耶？為釋迦牟尼佛力？</td><td>有人問：這位普明菩薩具有大神通力，所以應當能夠自己前來；但那些出家、在家的菩薩以及童男童女，要如何自己到達呢？多寶世界在最東邊，路途遙遠，這是靠他們自己的力量行走呢？還是靠寶積佛的威力？還是普明菩薩的威力呢？還是釋迦牟尼佛的威力呢？</td><td class="bh10p4-guan"><b>設難——集眾遠行的力量歸屬之惑</b>——此問扣住「多寶世界最在東邊，道里悠遠」的空間懸隔，質疑隨行大眾（尤其力量薄弱者）憑什麼能夠橫越無邊時空，並將可能的力量來源一一列出，逼論主逐一釐清。</td></tr><tr><td class="bh10p4-qa">答曰：盡是四種人力。是出家、居家菩薩，或是不退五通成就菩薩，四如意足好修，先世釋迦牟尼佛因緣，亦自用己力，亦是普明菩薩力，何以故？是中力勢薄者，是普明菩薩力故得來。如轉輪聖王飛上天時，四種兵及諸宮觀、畜獸，一切皆飛；轉輪聖王功德大故，能令一切隨而飛從。此亦如是，力勢薄者，以普明菩薩力故皆亦得來。亦是寶積佛力，及釋迦牟尼光明照之。若自無力，但釋迦牟尼佛光明照之，亦應能來，何況有三！</td><td>回答說：這都是四種人力共同成就的。這些出家、在家的菩薩，有的是不退轉、已成就五種神通的菩薩，善於修習四如意足，加上過去世與釋迦牟尼佛結下的因緣，所以既是靠自己的力量，也是靠普明菩薩的力量——為什麼呢？因為其中力量薄弱的人，正是靠普明菩薩的威力才能前來。就像轉輪聖王飛上天時，他所率領的四種軍隊，以及宮殿樓觀、各種畜獸，全都一同飛起；因為轉輪聖王功德廣大，能使一切隨從都跟著飛行。這裡也是同樣的道理，力量薄弱的人，憑藉普明菩薩的威力也都能夠前來。同時也是寶積佛的威力，以及釋迦牟尼佛光明照耀所致。如果自己毫無力量，只靠釋迦牟尼佛的光明照耀，也應當能夠前來，何況同時具備三種助力呢！</td><td class="bh10p4-guan"><b>破單一因說——四力和合，無有獨立自性之因</b>——論主的解答並非指向某一個「唯一真正的推動者」，而是把「自力」「普明菩薩力」「寶積佛力」「釋迦牟尼佛光明」四種因緣並列，說明成就同一件事可以同時具足多重助緣，彼此並不互相排斥。轉輪聖王喻更點出「功德愈大，攝受愈廣」的緣起法則——沒有一個獨立自存、憑空生起的「移動之力」，一切皆是眾緣和合的示現，這正是緣起無自性的具體演繹。</td></tr><tr><td class="bh10p4-qa">問曰：是普明菩薩何不獨來而多將眾人？</td><td>有人問：這位普明菩薩為什麼不獨自前來，卻帶了這麼多隨行的人呢？</td><td class="bh10p4-guan"><b>設難——獨行與眾隨的取捨之惑</b>——神通廣大的普明菩薩理應可以獨自赴會，此問追究「多將眾人」是否只是排場鋪張，抑或別有深意。</td></tr><tr><td class="bh10p4-qa">答曰：翼從所宜故。譬如國王出時，必有營從。復次，是普明菩薩及釋迦牟尼佛因緣人故。所以者何？彼大眾中二眾共來，是故知有因緣者來，無因緣者住。</td><td>回答說：這是因為隨行護衛本是應有的禮儀。就像國王出巡時，必定有隨從護衛一樣。再者，這也是因為普明菩薩與釋迦牟尼佛都與這些大眾有宿世因緣的緣故。為什麼這麼說呢？因為在那大眾之中，出家、在家兩眾一同前來，由此可知：與此因緣相應的人便隨行而來，沒有因緣的人便留在原處。</td><td class="bh10p4-guan"><b>破排場見——隨行者多寡，繫於因緣非儀節</b>——論主先以「國王出必有營從」順應世間常情作答，隨即翻進一層：真正決定誰隨行、誰留下的，不是排場的需要，而是各人與普明菩薩、釋迦牟尼佛之間是否具足宿世因緣。表面的「隨眾多寡」，底層仍是因緣聚散的展現。</td></tr><tr><td class="bh10p4-qa">問曰：是菩薩何以故與諸在家、出家，童男、童女俱來？</td><td>有人問：這位菩薩為什麼要與這些在家、出家的大眾，以及童男、童女一同前來呢？</td><td class="bh10p4-guan"><b>設難——眷屬身分駁雜之惑</b>——此問聚焦於隨行者身分的複雜多元，質疑不同身分、不同根器的大眾何以能夠共赴一會。</td></tr><tr><td class="bh10p4-qa">答曰：佛弟子七眾：比丘、比丘尼、學戒尼、沙彌、沙彌尼、優婆塞、優婆夷。優婆塞、優婆夷是居家，餘五眾是出家。出家、在家中更有二種：若大、若小。小者，童男、童女；餘者為大。</td><td>回答說：佛的弟子共有七眾：比丘、比丘尼、學戒尼、沙彌、沙彌尼、優婆塞、優婆夷。其中優婆塞、優婆夷是在家眾，其餘五眾是出家眾。而出家、在家之中，又各自分為兩種：或大或小。所謂「小」，指的是童男、童女；其餘的則稱為「大」。</td><td class="bh10p4-guan"><b>安立七眾——身分雖異，同為佛法所攝</b>——論主先不直接論證「為何同行」，而是先如實安立佛教七眾的身分架構，為下文「大小平等」的辯證預先鋪墊分類基礎，顯示佛法攝受的範圍本自涵蓋不同身分、不同年齒的一切眾生。</td></tr><tr><td class="bh10p4-qa">問曰：大者應行，小者何以能來？</td><td>有人問：年長的人理應可以同行，年幼弱小的人怎麼也能夠前來呢？</td><td class="bh10p4-guan"><b>設難——年齒大小與修行資格之惑</b>——此問直接質疑「小」（童男童女）是否有資格參與這場遠赴他方世界的莊嚴法會，觸及「以年齡、外相判定修行資格」的常情執見。</td></tr><tr><td class="bh10p4-qa">答曰：在功德，不在大小。若失功德利，行不善法，雖老而小；若有功德利，行善法，雖小而大。復次，此小者遠來，人見則歎：小而能爾，為法遠來！亦顯佛法小大皆得奉行。外道法中，婆羅門得行其法，非婆羅門不得行；佛法無大、無小，無內、無外，一切皆得修行。譬如服藥，以除病為主，不擇貴賤大小。</td><td>回答說：這在於是否具備功德，而不在於年齡的大小。如果失去了功德利益，做不善之法，即使年紀老邁，仍是「小」；如果具備功德利益，行持善法，即使年紀幼小，仍是「大」。再者，這些年幼者能夠遠道而來，人們見了便會讚歎：「年紀這麼小，竟能如此！為了佛法而不辭遠行！」這也正顯示佛法無論大小根器，都能奉行修習。外道之法，只有婆羅門種姓才能修行，非婆羅門則不能修行；而佛法沒有大小之別，沒有內外之分，一切眾生都能修行奉持。就好比服用藥物，是以能否治病為主，並不揀擇尊貴或卑賤、年長或年幼。</td><td class="bh10p4-guan"><b>破年齒相見——功德為體，大小為假名施設</b>——論主釜底抽薪，直接推翻「以年齡定大小」的世俗成見，改以「功德利、行善法」作為真正的判準；「雖老而小、雖小而大」八字，正是「大」「小」二相本無自性、僅依功德因緣假立之名的鮮明例證。末以「佛法無大無小、無內無外」對比外道種姓局限，並以「服藥不擇貴賤」作譬，收束於佛法平等普被、不揀根性的究竟義——這正是緣起性空之下，一切名相分別皆可消融於法性平等的體現。</td></tr></tbody></table><p class="bh10p4-note">卷十第4品「集散品·緣起、空性與菩薩行」：普明菩薩受華發引，率無數出家在家菩薩及童男童女俱共前來，論主以三重問答破解「力量歸屬」「獨行與眾隨」「大小資格」三重時空悖論——四力和合無有獨立自性之因、隨行繫於因緣非儀節、功德為體大小為假名施設，終歸「佛法無大無小、無內無外，一切皆得修行」一義。經在最頂，四問四答俱全，問在答前。　中觀關鍵詞：四力和合緣起無自性 因緣聚散 功德為體假名施設 佛法平等無揀根性</p></div></div>
+<script id="wy-bh10p4-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh10p4Btn"),BOX=document.getElementById("bh10p4Box"),MODAL=document.getElementById("bh10p4Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=3;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var z=document.getElementById("c10p4Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh10p4Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH10P4:END-->
 </body></html>
