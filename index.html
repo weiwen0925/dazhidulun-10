@@ -2008,4 +2008,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH10P1:END-->
+<!--WY-BH10P2:BEGIN-->
+<style id="wy-bh10p2-css">
+.bh10p2-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh10p2-fabbox.show{display:block;}
+.bh10p2-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh10p2-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh10p2-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh10p2-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh10p2-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh10p2-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh10p2-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh10p2-modal.open{display:flex;}
+.bh10p2-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh10p2-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh10p2-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh10p2-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh10p2-close:hover{background:#dde2e6;}
+.bh10p2-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh10p2-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh10p2-tbl th,.bh10p2-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh10p2-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh10p2-tbl thead th:nth-child(1){width:32%;}.bh10p2-tbl thead th:nth-child(2){width:41%;}.bh10p2-tbl thead th:nth-child(3){width:27%;}
+.bh10p2-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh10p2-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh10p2-guan{background:#eef2f5;color:#37505f;}
+.bh10p2-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh10p2-tbl tbody tr:nth-child(even) td.bh10p2-guan{background:#e8eef2;}
+.bh10p2-tbl tbody tr:nth-child(even) td.bh10p2-qa{background:#e7ecdb;}
+.bh10p2-tbl b{color:#8b2500;}
+.bh10p2-guan b{color:#2f6b5a;}
+.bh10p2-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh10p2-note b{color:#8b2500;}
+@media(max-width:900px){.bh10p2-fabbox{right:14px;}.bh10p2-tbl{font-size:11px;}.bh10p2-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh10p2-fabbox" id="bh10p2Box"><button class="bh10p2-btn" id="bh10p2Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh10p2-ic">譯</span><span class="bh10p2-ls"><span class="bh10p2-l1">本品 · 原文·白話·中觀</span><span class="bh10p2-l2">白話翻譯表</span></span></button></div><div class="bh10p2-modal" id="bh10p2Modal" role="dialog" aria-modal="true"><div class="bh10p2-card"><button class="bh10p2-close" id="bh10p2Close" type="button" aria-label="關閉">×</button><h3>卷十 · 第2品 白話翻譯表（參訪神通二辯）</h3><p class="sub">原文↔白話↔中觀概念 逐段對照 · 大智度論卷十・第二品・參訪神通二辯</p><table class="bh10p2-tbl"><caption>參訪神通二辯 · 原文｜白話翻譯｜中觀概念（共9段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh10p2-src">是時，普明菩薩白寶積佛言：「世尊！我今當往見釋迦牟尼佛，禮拜、供養；及見彼諸菩薩摩訶薩紹尊位者，皆得陀羅尼及諸三昧，於諸三昧而得自在。」</td><td>那時，普明菩薩對寶積佛稟白說：「世尊！我現在應當前往拜見釋迦牟尼佛，禮拜、供養祂；並且拜見那裡即將紹繼佛位的諸大菩薩，他們都已獲得陀羅尼與種種三昧，在各種三昧之中都已得自在。」</td><td class="bh10p2-guan"><b>經文標宗——參訪之願，埋下兩條辯證線索</b>——普明菩薩一句稟白，同時揭出本品兩大焦點：「禮拜供養釋迦牟尼佛」（參訪的矛盾）與「見紹尊位菩薩於諸三昧得自在」（神通的矛盾）。表面看似平常的請辭，實則是論主用以展開兩番辯證的文本基準。</td></tr><tr><td class="bh10p2-qa">問曰：若諸佛持戒、禪定、智慧、度人皆等，是普明菩薩何以欲來見釋迦牟尼佛？</td><td>有人問：如果諸佛在持戒、禪定、智慧、度化眾生等各方面都是平等無二的，那麼普明菩薩為什麼還要前來拜見釋迦牟尼佛呢？</td><td class="bh10p2-guan"><b>設難——理體平等與行為抉擇的張力</b>——此問把「諸佛功德平等」的前提與「遠行參訪」的具體行為對撞：既然寶積佛與釋迦佛本質無別，普明菩薩何必捨近求遠？這個質難若不化解，便可能導向「著相」之譏。</td></tr><tr><td class="bh10p2-qa">答曰：諸菩薩常欲見佛無厭足，聽法無厭足，見諸菩薩僧無厭足；諸菩薩於世間法皆以厭患，於上三事心無厭足。</td><td>回答說：諸菩薩對於見佛，永遠沒有滿足的時候；對於聽聞佛法，也永遠沒有滿足；對於拜見諸菩薩僧眾，同樣沒有滿足。菩薩對於世間種種法，內心都感到厭離；唯獨對「見佛、聽法、見僧」這三件事，心中永無厭足。</td><td class="bh10p2-guan"><b>破理事對立——理體平等不礙事修無盡</b>——論主的解答動用「理體／勝義諦」與「事修／世俗諦」雙軸：承認「佛佛道同」是體，並不排斥「往詣參禮」屬於用；理體上的絕對平等，絲毫不妨礙事修上精進無盡的實踐。菩薩對三寶「無厭足」的法愛，正是推動菩薩道不斷前行的核心動力——這種「無厭」並非貪欲，而是趣向無漏功德、永不止息的悲智增上。</td></tr><tr><td class="bh10p2-src">如手居士從淨居天來欲見佛，其身微細沒失，譬如消蘇，不得立地。佛語手居士：「汝化作麁身，觀此地相！」居士即如佛言化作麁身，觀念此地相，頭面禮佛足，一面立。佛問居士：「汝幾事無厭生淨居天？」答言：「我三事無厭生淨居天：一、見諸佛供養無厭，二、聽法無厭，三、供給僧無厭。如佛在閻浮提，四部眾常隨逐佛，聽法、問法；是我淨居諸天，亦常從我聽法、問法。」聲聞猶尚聽法無厭足，何況法性身菩薩？以是故，普明菩薩來見釋迦牟尼佛。</td><td>就像手居士從淨居天下來想要見佛，他的身體太過微細，一到娑婆世界便消融沒失，就好比融化的酥油一樣，無法在地上站立。佛便對手居士說：「你化現一個粗重的身形，仔細觀察這裡的地相！」居士便依照佛的話，化現出粗重的身形，仔細觀察此地的相狀，然後向佛頭面禮足，站到一旁。佛問居士：「你是因為哪幾件事沒有厭足，才投生到淨居天的？」居士回答：「我因三件事沒有厭足，才投生淨居天：一是見諸佛、供養諸佛沒有厭足；二是聽聞佛法沒有厭足；三是供養僧眾沒有厭足。就像佛在閻浮提時，四眾弟子常隨侍在佛身邊，聽法、問法；我在淨居天的天眾，也同樣常跟隨我聽法、問法。」聲聞尚且對聽法沒有厭足之心，何況是法性身的大菩薩呢？正因如此，普明菩薩才前來拜見釋迦牟尼佛。</td><td class="bh10p2-guan"><b>譬喻——化粗身入世·無厭足貫通聖凡</b>——手居士天身「微細沒失，譬如消蘇」，象徵僅安住清淨禪定或空性見（細），無法在染污具體的世間（粗地）建立度生與供養的因緣；「化作麁身」不是退步，而是菩薩主動調適自身、融入世俗諦以成就利生事業的方便。手居士「三事無厭」與經文普明菩薩之願前後呼應，證明「無厭足」的法愛遍及凡聖，連天界聖者尚且如此，法性身菩薩更不待言——這正是「理體平等」與「事修無盡」二諦圓融的具體示現。</td></tr><tr><td class="bh10p2-src">「及見此間諸菩薩摩訶薩紹尊位者，皆得陀羅尼及諸三昧」，如先「讚菩薩品」中說。「於諸三昧而得自在」者——</td><td>經文說「並且拜見這裡即將紹繼佛位的諸大菩薩，他們都已獲得陀羅尼與種種三昧」，這如同先前「讚菩薩品」中所說的一樣。至於「在諸三昧之中得自在」這一句——</td><td class="bh10p2-guan"><b>承轉——由參訪轉入三昧境界之辯</b>——論主處理完「參訪」的疑難後，回頭承接經文後半句，將論述焦點從「空間上的遠行參訪」轉向「三昧境界上的自在與否」，為下一輪問答鋪路。</td></tr><tr><td class="bh10p2-qa">問曰：如佛一人，一切三昧中得自在，何以言「菩薩亦一切三昧中得自在」？</td><td>有人問：照理說只有佛一人能在一切三昧之中都得自在，為什麼經文卻說「菩薩也在一切三昧之中得自在」呢？</td><td class="bh10p2-guan"><b>設難——三昧自在的名相混淆</b>——此問抓住一個名相上的疑點：若菩薩也「於一切三昧中得自在」，豈非與佛毫無分別？這個質難若不釐清，將混淆佛與菩薩在證量上根本的差異。</td></tr><tr><td class="bh10p2-qa">答曰：有二種三昧：一者佛三昧，二者菩薩三昧。是諸菩薩於菩薩三昧中得自在，非佛三昧中。</td><td>回答說：三昧有兩種：一是佛三昧，二是菩薩三昧。這些菩薩是在「菩薩三昧」之中得自在，而不是在「佛三昧」之中得自在。</td><td class="bh10p2-guan"><b>破名相混淆——三昧有二種，自在各有分齊</b>——論主先把籠統的「三昧」一詞切分為佛三昧與菩薩三昧兩個層級：菩薩的「一切自在」，自在的範圍僅限於菩薩三昧的界域之內；至於佛三昧，菩薩只能「少多入」，尚未真正得自在。這一釐清說明：菩薩的自在是「相對」而非「絕對」的，為下文神通失效的公案埋下伏筆——連菩薩三昧都有邊界，神通自然不可能萬能。</td></tr><tr><td class="bh10p2-src">如說《諸佛要集經》中：文殊尸利欲見佛集，不能得到。諸佛各還本處，文殊尸利到諸佛集處，有一女人近彼佛坐入三昧，文殊尸利入，禮佛足已，白佛言：「云何此女人得近佛坐而我不得？」佛告文殊尸利：「汝覺此女人，令從三昧起，汝自問之。」文殊尸利即彈指覺之而不可覺，以大聲喚亦不可覺，捉手牽亦不可覺，又以神足動三千大千世界猶亦不覺。文殊尸利白佛言：「世尊！我不能令覺。」是時，佛放大光明照下方世界，是中有一菩薩名棄諸蓋，即時從下方出，來到佛所，頭面禮佛足，一面立。佛告棄諸蓋菩薩：「汝覺此女人！」即時彈指，此女從三昧起。文殊尸利白佛言：「以何因緣，我動三千大千世界不能令此女起？棄諸蓋菩薩一彈指，便從三昧起？」</td><td>就像《諸佛要集經》中所說：文殊師利想要參加諸佛的集會，卻無法到達。等到諸佛各自返回本處之後，文殊師利才到達諸佛集會之處，見到有一位女子就近坐在佛的身旁，入於三昧之中。文殊師利進去，向佛頂禮之後，稟白佛說：「為什麼這位女子能夠靠近佛坐，而我卻不能？」佛告訴文殊師利：「你去喚醒這位女子，讓她從三昧中出定，你自己問問她吧。」文殊師利便對她彈指想喚醒她，卻無法喚醒；又用大聲呼喚，仍然無法喚醒；用手拉她，也無法喚醒；甚至運用神足通震動三千大千世界，她仍然毫無所覺。文殊師利便對佛稟白說：「世尊！我沒有辦法讓她醒來。」這時，佛便放出大光明照耀下方世界，那裡有一位菩薩名叫棄諸蓋，立刻從下方世界出來，來到佛的座前，向佛頂禮，站在一旁。佛便告訴棄諸蓋菩薩：「你去喚醒這位女子！」棄諸蓋菩薩隨即彈指一聲，這位女子便從三昧中出定了。文殊師利於是稟白佛說：「是什麼因緣，我震動三千大千世界都不能讓這位女子起定，棄諸蓋菩薩僅僅一彈指，她便從三昧中出定了呢？」</td><td class="bh10p2-guan"><b>公案——神通逐級加碼卻全然失效</b>——文殊師利代表大智慧、大神通的菩薩，竟連諸佛集會的座位都求之不得；而後又以彈指、大聲呼喚、以手牽引、乃至神足震動三千大千世界，力量層層加碼，結果卻完全相同——女子如如不動。這則公案的張力在於：神通的物理威力再大，也無法觸動眾生心靈深處的定境，因為喚醒與否，關鍵不在外在力量的強弱，而在因緣是否具足。棄諸蓋菩薩僅僅「一彈指」便輕易成功，恰與文殊「震動大千而無效」形成強烈對比，逼出下文「因緣大於神通」的核心答案。</td></tr><tr><td class="bh10p2-src">佛告文殊尸利：「汝因此女人初發阿耨多羅三藐三菩提意，是女人因棄諸蓋菩薩初發阿耨多羅三藐三菩提意。以是故，汝不能令覺。汝於諸佛三昧中功德未滿。是諸菩薩三昧中得自在，佛三昧中少多入，而未得自在故耳。」</td><td>佛告訴文殊師利說：「你是因為這位女子而最初發起無上正等正覺之心的；而這位女子，卻是因為棄諸蓋菩薩的引導而最初發起無上正等正覺之心的。正因如此，你才無法喚醒她。你在諸佛三昧的功德上，尚未圓滿具足。這正是——菩薩在菩薩三昧之中得自在，在佛三昧之中只能少分證入，還沒有真正得自在的緣故啊。」</td><td class="bh10p2-guan"><b>破神通見——因緣深淺決定成敗，非法力高低</b>——佛陀的回答，是整段公案邏輯的樞紐：喚醒的關鍵，全在一段「宿世的師徒法緣」——那女子是因棄諸蓋菩薩而初發菩提心，文殊反而是因這女子而初發菩提心。誰握有那段最初結下的因緣，誰就能喚醒對方；力量的大小，反倒是次要的。這徹底推翻了「神通萬能」的自性見，正面確立中觀「緣起」的核心：一切成就皆繫於因緣具足與否，非有一個獨立、恆常、可任意施展的「神力自性」。末句「佛三昧中少多入，而未得自在」再度呼應前文的分齊，收束全品「參訪」與「神通」兩番辯證，同歸「一切法皆從因緣生，無有自性」一義。</td></tr></tbody></table><p class="bh10p2-note">卷十第2品「參訪神通二辯」：普明菩薩發願參見釋迦牟尼佛及紹尊位菩薩，論主設兩重辯證——「參訪的矛盾」以諸菩薩見佛聽法無厭足、手居士化麁身公案，破理體平等與事修無盡的表面對立；「神通的矛盾」以文殊震動三千大千世界不能喚醒女子入定、棄諸蓋菩薩一彈指即醒的公案，破神通萬能之見，彰顯因緣深淺方是關鍵。經在最頂，二問二答俱全。　中觀關鍵詞：理體事修二諦 無厭足法愛 化麁身方便 因緣大於神通 破自性神通見</p></div></div>
+<script id="wy-bh10p2-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh10p2Btn"),BOX=document.getElementById("bh10p2Box"),MODAL=document.getElementById("bh10p2Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=1;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var z=document.getElementById("c10p2Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh10p2Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH10P2:END-->
 </body></html>
