@@ -2365,4 +2365,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH10P8:END-->
+<!--WY-BH10P9:BEGIN-->
+<style id="wy-bh10p9-css">
+.bh10p9-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh10p9-fabbox.show{display:block;}
+.bh10p9-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh10p9-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh10p9-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh10p9-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh10p9-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh10p9-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh10p9-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh10p9-modal.open{display:flex;}
+.bh10p9-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh10p9-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh10p9-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh10p9-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh10p9-close:hover{background:#dde2e6;}
+.bh10p9-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh10p9-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh10p9-tbl th,.bh10p9-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh10p9-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh10p9-tbl thead th:nth-child(1){width:32%;}.bh10p9-tbl thead th:nth-child(2){width:41%;}.bh10p9-tbl thead th:nth-child(3){width:27%;}
+.bh10p9-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh10p9-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh10p9-guan{background:#eef2f5;color:#37505f;}
+.bh10p9-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh10p9-tbl tbody tr:nth-child(even) td.bh10p9-guan{background:#e8eef2;}
+.bh10p9-tbl tbody tr:nth-child(even) td.bh10p9-qa{background:#e7ecdb;}
+.bh10p9-tbl b{color:#8b2500;}
+.bh10p9-guan b{color:#2f6b5a;}
+.bh10p9-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh10p9-note b{color:#8b2500;}
+@media(max-width:900px){.bh10p9-fabbox{right:14px;}.bh10p9-tbl{font-size:11px;}.bh10p9-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh10p9-fabbox" id="bh10p9Box"><button class="bh10p9-btn" id="bh10p9Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh10p9-ic">譯</span><span class="bh10p9-ls"><span class="bh10p9-l1">本品 · 原文·白話·中觀</span><span class="bh10p9-l2">白話翻譯表</span></span></button></div><div class="bh10p9-modal" id="bh10p9Modal" role="dialog" aria-modal="true"><div class="bh10p9-card"><button class="bh10p9-close" id="bh10p9Close" type="button" aria-label="關閉">×</button><h3>卷十 · 第9品 白話翻譯表（華滿十方）</h3><p class="sub">原文↔白話↔中觀概念 逐段對照 · 大智度論卷十・第9品・華滿十方</p><table class="bh10p9-tbl"><caption>華滿十方 · 原文｜白話翻譯｜中觀概念（共6段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh10p9-src">所散蓮華，滿東方如恒河沙等諸佛世界。</td><td>佛所散出的這些蓮花，竟然遍滿了東方多如恆河沙數那麼多的一切諸佛世界。</td><td class="bh10p9-guan"><b>經文標宗——有限之物遍滿無限之境</b>——經文僅一句話，卻構造出一個「有限的華朵」與「無限恆河沙世界」之間尺度懸殊的物理奇蹟；論主正是以這句經文為起點，展開一場關於大小、微著、緣起的中觀本體論解構。</td></tr><tr><td class="bh10p9-qa">問曰：華少而世界多，云何滿？</td><td>有人問：蓮花的數量這麼少，而諸佛世界的數量卻多到無量無邊，這少量的蓮花怎麼可能填滿得了呢？</td><td class="bh10p9-guan"><b>設問——常識性自性見的自然反應</b>——此問是任何人初讀經文時最直覺的疑惑：花是有限之物，世界是無限之數，二者體積、數量懸殊如此，「滿」字看似完全不合物理常識。此問實際上預設了「華」與「世界」各自具有固定不變之「量」這一自性見，正是下文所要破斥的根本前提。</td></tr><tr><td class="bh10p9-qa">答曰：佛神通力故，如上八種自恣變化法：大能令小，小能令大，輕能令重，重能令輕，自在無礙，隨意所到，能動大地，所願能辦。諸大聖人皆得是八種自在，是故佛能以小華滿東方如恒河沙等世界。</td><td>回答說：這是因為佛具有神通之力的緣故，正如前面所說的八種任運自在的變化法門：能使大的變成小的，也能使小的變成大的；能使輕的變成重的，也能使重的變成輕的；一切都能任運自在、毫無障礙，隨心所欲地到達任何地方，能夠震動大地，凡是心中所願求的事，無不能夠成辦。一切大聖人都證得這八種自在之力，所以佛才能夠用數量有限的小小蓮花，填滿東方恆河沙數那樣多的世界。</td><td class="bh10p9-guan"><b>八種自在——物無定性，故可大小相即</b>——論主的第一層回答訴諸「佛神通力」，但其底層邏輯並非訴諸不可解釋的神秘力量，而是「物無固定自性」：正因為大小、輕重等物理屬性並非物自身恆常不變的定性，而只是隨緣顯現的假名施設，聖者證得諸法實相之後，便能任運轉動這些假名施設中的大小關係，讓小華與大千世界在緣起法中自在相即，不相妨礙。這正是中觀「諸法無自性、故一切法皆可隨緣轉動」的具體示現。</td></tr><tr><td class="bh10p9-src">又復以示眾生未來福報，如此少華，滿東方世界。</td><td>此外，佛也想藉此向眾生顯示：他們未來所能獲得的福德果報，就像這少少的蓮花，卻能夠遍滿整個東方世界一樣，因小果大，福報不可思議。</td><td class="bh10p9-guan"><b>神通即教具——由「如何」轉向「為何」</b>——此段點出佛陀示現神通並非為了炫耀能力，而是別有教化的用意：將原本抽象、難以想像的因果業力，透過「小華滿大千世界」這一可見的視覺奇蹟，具象化為眾生可以親眼目睹、心領神會的教材，藉以建立眾生對因果法則的堅固信心。</td></tr><tr><td class="bh10p9-src">又勸東方菩薩，言殖福於佛田中，所得果報，亦如此華彌滿無量土。</td><td>佛又藉此勸勉東方前來的諸位菩薩：只要將福德的種子種植在「佛」這塊殊勝的福田之中，將來所得到的果報，也將如同這朵蓮花一般，能夠遍滿無量無邊的國土。</td><td class="bh10p9-guan"><b>福田效應——微因於勝田中孕育巨果</b>——此段引入「福田」這一關鍵變數，補足了單純小因大果放大邏輯的不足：業果之所以能有懸殊的倍率變化，除了因緣本身，更繫於所種之「田」的殊勝程度——種在「佛」這一無上福田之中的微小善因，便能如蓮花遍滿十方一般，孕育出不可思議的廣大果報，這正是緣起法中因、緣、果三者相待、缺一不可的具體展現。</td></tr><tr><td class="bh10p9-src">汝雖遠來，應當歡喜，遇此大福田，果報無量！</td><td>佛又勸勉道：你們雖然是遠道跋涉、長途而來，但應當心生歡喜，因為能夠遇到「佛」這樣廣大殊勝的福田，將來所得的果報必定無量無邊！</td><td class="bh10p9-guan"><b>雙向教化——啟信於眾、堅願於菩薩</b>——此段是佛陀神蹟教學的收束句：以「大福田、果報無量」勉勵遠道而來的東方菩薩，使其不因路途艱辛而心生退轉，反而生起歡喜堅固之心。至此，「華滿十方」這一物理奇蹟，已從單純的神通展示，轉化為兼具示現真理與策勵發心雙重意義的教化事件，體現佛陀教法即事顯理、即相見性的一貫作風。</td></tr></tbody></table><p class="bh10p9-note">卷十第9品「華滿十方」：釋迦牟尼佛所散蓮華遍滿東方恆河沙等諸佛世界，論主設一問「華少世界多，云何滿」，先以佛之八種自在解構「大小無定性」之物理奇蹟，再以「示眾生未來福報」、「勸東方菩薩殖福佛田」、「果報無量堪慰遠來」三義，層層轉出福田效應與雙向教化之深意。經在最頂，一問一答俱全、問在答前。　中觀關鍵詞：物無定性 大小相即假名施設 福田效應 因緣果三者相待 即事顯理</p></div></div>
+<script id="wy-bh10p9-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh10p9Btn"),BOX=document.getElementById("bh10p9Box"),MODAL=document.getElementById("bh10p9Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=8;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var z=document.getElementById("c10p9Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh10p9Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH10P9:END-->
 </body></html>
