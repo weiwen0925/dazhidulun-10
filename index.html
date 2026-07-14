@@ -2518,4 +2518,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH10P11:END-->
+<!--WY-BH10P12:BEGIN-->
+<style id="wy-bh10p12-css">
+.bh10p12-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh10p12-fabbox.show{display:block;}
+.bh10p12-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh10p12-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh10p12-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh10p12-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh10p12-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh10p12-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh10p12-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh10p12-modal.open{display:flex;}
+.bh10p12-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh10p12-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh10p12-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh10p12-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh10p12-close:hover{background:#dde2e6;}
+.bh10p12-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh10p12-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh10p12-tbl th,.bh10p12-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh10p12-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh10p12-tbl thead th:nth-child(1){width:32%;}.bh10p12-tbl thead th:nth-child(2){width:41%;}.bh10p12-tbl thead th:nth-child(3){width:27%;}
+.bh10p12-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh10p12-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh10p12-guan{background:#eef2f5;color:#37505f;}
+.bh10p12-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh10p12-tbl tbody tr:nth-child(even) td.bh10p12-guan{background:#e8eef2;}
+.bh10p12-tbl tbody tr:nth-child(even) td.bh10p12-qa{background:#e7ecdb;}
+.bh10p12-tbl b{color:#8b2500;}
+.bh10p12-guan b{color:#2f6b5a;}
+.bh10p12-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh10p12-note b{color:#8b2500;}
+@media(max-width:900px){.bh10p12-fabbox{right:14px;}.bh10p12-tbl{font-size:11px;}.bh10p12-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh10p12-fabbox" id="bh10p12Box"><button class="bh10p12-btn" id="bh10p12Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh10p12-ic">譯</span><span class="bh10p12-ls"><span class="bh10p12-l1">本品 · 原文·白話·中觀</span><span class="bh10p12-l2">白話翻譯表</span></span></button></div><div class="bh10p12-modal" id="bh10p12Modal" role="dialog" aria-modal="true"><div class="bh10p12-card"><button class="bh10p12-close" id="bh10p12Close" type="button" aria-label="關閉">×</button><h3>卷十 · 第12品 白話翻譯表（破十方品）</h3><p class="sub">原文↔白話↔中觀概念 逐段對照 · 大智度論卷十・第12品・破十方品</p><table class="bh10p12-tbl"><caption>破十方品 · 原文｜白話翻譯｜中觀概念（共12段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh10p12-src">南方度如恒河沙等諸佛世界，其土最在邊，世界名「離一切憂」，佛號「無憂德」，菩薩名「離憂」。西方度如恒河沙等諸佛世界，其世界最在邊，世界名「滅惡」，佛號「寶山」，菩薩名「儀意」。北方度如恒河沙等諸佛世界，其世界最在邊，世界名「勝」，佛號「勝王」，菩薩名「得勝」。</td><td>往南方經過如恆河沙數那麼多的諸佛世界，在最邊際之處，有一個世界名叫「離一切憂」，那裡的佛號稱為「無憂德」，有一位菩薩名叫「離憂」。往西方經過如恆河沙數那麼多的諸佛世界，在最邊際之處，有一個世界名叫「滅惡」，佛號稱為「寶山」，菩薩名叫「儀意」。往北方經過如恆河沙數那麼多的諸佛世界，在最邊際之處，有一個世界名叫「勝」，佛號稱為「勝王」，菩薩名叫「得勝」。</td><td class="bh10p12-guan"><b>經文鋪陳——十方世界宛然羅列</b>——經文依序列出南、西、北方最邊際的世界、佛號與菩薩名，形式上與前面（東方）完全對稱，構成一個看似井然有序、方位分明的十方宇宙圖像；正是這幅看似理所當然的「十方」圖像，成為論主接下來要徹底解構的對象。</td></tr><tr><td class="bh10p12-src">下方度如恒河沙等諸佛世界，其世界最在邊，世界名「善」，佛號「善德」，菩薩名「華上」。上方度如恒河沙等諸佛世界，其世界最在邊，世界名「喜」，佛號「喜德」，菩薩名「得喜」。如是一切，皆如東方。</td><td>往下方經過如恆河沙數那麼多的諸佛世界，在最邊際之處，有一個世界名叫「善」，佛號稱為「善德」，菩薩名叫「華上」。往上方經過如恆河沙數那麼多的諸佛世界，在最邊際之處，有一個世界名叫「喜」，佛號稱為「喜德」，菩薩名叫「得喜」。像這樣，一切（四維、上下）的情形，都和東方所說的一樣。</td><td class="bh10p12-guan"><b>總攝十方——「如是一切皆如東方」的伏筆</b>——經文以「皆如東方」一句總結十方世界的敘述模式完全一致，看似只是敘述上的簡省，實則已埋下論主質疑的種子：若十方世界之敘述可以如此規格化、對稱化地無限鋪陳，那麼「方」是否真有其固定不變的實體？</td></tr><tr><td class="bh10p12-qa">問曰：如佛法中，實無諸方名。何以故？諸五眾、十二入、十八界中所不攝，四法藏中亦無。說方是實法，因緣求亦不可得，今何以故此中說十方諸佛、十方菩薩來？</td><td>有人問：在佛法之中，其實並沒有所謂「方」（方向、方位）這樣的名相。為什麼呢？因為五蘊、十二入、十八界這些法相分類中，並沒有把「方」收攝在內；就連（佛法所立的）四種法藏之中，也找不到「方」這一法。如果說「方」是一個真實存在的法，那麼從因緣的角度去推求，也完全找不到它的實體。既然如此，這部經論中為什麼又說有十方諸佛、十方菩薩前來（供養、集會）呢？</td><td class="bh10p12-guan"><b>核心詰難——「方」於蘊處界中無所攝</b>——此問是全品的核心辯難：依佛法對一切法的分類架構（五蘊、十二入、十八界、四法藏），遍尋不著「方」這一法的位置，也無法在因緣分析中找到「方」的實體，於是「方」看似是一個佛法體系之外、卻又被經文大量使用的「多餘概念」，論主即以此為切入點，展開對「方」之實有性的徹底解構。</td></tr><tr><td class="bh10p12-qa">答曰：隨世俗法所傳故說「方」，求「方」實不可得。</td><td>回答說：這是隨順世間一般人所流傳習慣使用的說法，才說有「方」；如果真要去推求「方」的實體，其實是完全找不到的。</td><td class="bh10p12-guan"><b>二諦分判——世俗假名與勝義無實</b>——此答直接點出「方」的存在層次：僅是隨順世俗諦而施設的假名，用來方便溝通與指稱，並非勝義諦中真實存在之法；「方」的有與無，正好對應中觀二諦架構中「世俗有、勝義無」的基本區分，為下文層層辯論預先定調。</td></tr><tr><td class="bh10p12-qa">問曰：何以言無方？汝四法藏中不說，我六法藏中說。汝眾、入、界中不攝，我陀羅驃中攝。是「方」法，常相故，有相故，亦有亦常。</td><td>有人又問：你憑什麼說沒有「方」呢？雖然你（佛法）的四種法藏之中沒有說到「方」，但我（外道，如勝論派）所主張的六種法藏之中，卻明明說到了「方」。你（佛法）的五蘊、十二入、十八界中雖然沒有收攝「方」，但我所主張的「陀羅驃」（實句義）之中，卻收攝了「方」這一法。「方」這個法，具有恆常不變的相狀，也確實有其相狀可資辨認，所以「方」既是實有、也是恆常的。</td><td class="bh10p12-guan"><b>外道詰難——訴諸另立的法相體系</b>——提問者（代表如勝論派等外道學說）不服「方無實體」之說，轉而援引自宗的六句義體系（尤其是「陀羅驃／實句義」），主張「方」雖不在佛法蘊處界之列，卻在自宗體系中占有一席之地，且具「常相」「有相」，藉此為「方」爭取實有、恆常的地位——此正是不同哲學體系各自依其預設範疇而各說各話的典型例證。</td></tr><tr><td class="bh10p12-qa">問曰（續）：如經中說：「日出處是東方，日沒處是西方，日行處是南方，日不行處是北方。」日有三分合：若前合，若今合，若後合。隨方日分，初合是東方，南方、西方亦如是。日不行處是無分。彼間、此間，彼此是「方相」；若無「方」，無彼、此，彼、此是「方相」而非「方」。</td><td>（提問者接著說：）正如經典中所說：「太陽升起的地方是東方，太陽落下的地方是西方，太陽運行所經之處是南方，太陽不運行到的地方是北方。」太陽的運行可以分為前、今、後三個階段與各方位相合：如果是最初與某方相合，那個方位就是東方；南方、西方的情形也是同樣道理。而太陽完全不運行到的地方，就是沒有方位可分的地方。所謂「那邊」與「這邊」的區分，正是「方」的相狀表現；如果沒有「方」，就不會有「那邊」「這邊」的分別可言——「彼」與「此」的分別，正是「方」的相狀，而非只是空談。</td><td class="bh10p12-guan"><b>以太陽運行為證——訴諸經驗現象立「方」為實</b>——提問者進一步援引經中「日出為東、日沒為西」等說法為證據，主張太陽運行的方位次第有其客觀先後可循，「彼」「此」的分別現象歷歷可辨，藉由這種日常經驗的可觀察性，企圖證成「方」確有其相、確有其實，而非僅是隨俗假立的空名。</td></tr><tr><td class="bh10p12-qa">答曰：不然！須彌山在四域之中，日繞須彌，照四天下。</td><td>回答說：並非如此！須彌山位在四大部洲的中央，太陽是繞著須彌山運行，普照四大部洲。</td><td class="bh10p12-guan"><b>破斥經驗預設——太陽運行本無固定起點</b>——論主直接否定對方以「日出東、日沒西」為方位定準的預設，指出依佛教宇宙觀，太陽其實是繞須彌山運行、周而復始地照耀四大部洲，並無一個絕對固定的「起點」可稱為東方，這就從根本上動搖了對方「日出處即東方」的經驗論證基礎。</td></tr><tr><td class="bh10p12-qa">答曰（續）：欝怛羅越日中，是弗婆提日出，於弗婆提人是東方；弗婆提日中，是閻浮提日出，於閻浮提人是東方。</td><td>當北俱盧洲（欝怛羅越）正值中午之時，正是東勝身洲（弗婆提）太陽升起之時，對東勝身洲的人來說，那個方向就是他們的東方；當東勝身洲正值中午之時，正是南贍部洲（閻浮提）太陽升起之時，對南贍部洲的人來說，那個方向又是他們的東方。</td><td class="bh10p12-guan"><b>方位相對於觀察者——並無絕對的東方</b>——論主以四大部洲日照時差為例，具體說明「東方」完全是相對於不同部洲的觀察者當下所處位置而言，同一時刻，對甲洲人而言是正午、對乙洲人卻正是日出，可見「東方」並非一個放諸四海皆準的絕對方位，而是隨觀察者所在而變動的相對概念。</td></tr><tr><td class="bh10p12-qa">答曰（續）：是實無初。何以故？一切方皆東方，皆南方，皆西方，皆北方。</td><td>所以其實根本沒有一個真正、絕對的「最初」方位。為什麼呢？因為（隨著觀察者立足點的不同）一切方位都可以是東方，也都可以是南方、西方、北方。</td><td class="bh10p12-guan"><b>方位互為其反——無自性故可互轉</b>——由上述日照相對性的例證，得出結論：任何一個方位，隨立足點的轉換，都可以同時是東、南、西、北方中的任何一個，可見「方」根本沒有一個固定不變的自性可言，唯是隨緣安立、可以無限互轉的假名施設，這正是「方」無自性的直接證明。</td></tr><tr><td class="bh10p12-qa">答曰（續）：汝言「日出處是東方，日行處是南方，日沒處是西方，日不行處是北方」，是事不然！復次，有處日不合，是為非「方」，無「方相」故。</td><td>你所說的「太陽升起之處是東方，太陽運行經過之處是南方，太陽落下之處是西方，太陽不運行到之處是北方」，這樣的說法是站不住腳的！再者，如果有某些地方，太陽完全不曾與之相合（例如須彌山本身或極地等處），那麼那個地方就應該算是沒有「方」可言，因為根本沒有「方」的相狀可以顯現於彼處的緣故。</td><td class="bh10p12-guan"><b>方相有缺——反證「方」非普遍恆常之實法</b>——論主進一步指出，若依對方定義（以日照與否來界定方位），必然會出現太陽完全不曾照臨、因而無法歸類為任何方位的處所；一個號稱「常相」「有相」的實法，理應普遍存在於一切處，如今卻有處無「方相」可得，可見「方」並非真實、普遍、恆常的實有之法。</td></tr><tr><td class="bh10p12-qa">問曰：我說一國中「方相」，汝以四國為難，以是故，東方非無初。</td><td>（提問者辯解說：）我原本所說的「方相」，指的是在單一一個國土範圍之內來說的；你卻拿四大部洲（四國）的情形來為難我，這是不公平的比較。所以，在一個國土之內來說，東方仍然是有一個確定的最初起點的，並非沒有起點。</td><td class="bh10p12-guan"><b>退守論證——縮小範圍以求保全「方」之實有</b>——面對前述四洲日照相對性的反駁，提問者退而求其次，將論域限縮在「一國之內」，企圖藉由縮小討論範圍來保住「東方確有一個固定起點」的主張，這是論辯中常見的策略：當普遍性論證遭到反駁時，便退守到較小的特殊範圍內尋求立足點。</td></tr><tr><td class="bh10p12-qa">答曰：若一國中，日與東方合是為有邊，有邊故無常，無常故是不遍。以是故，「方」但有名而無實。</td><td>回答說：就算只在一個國土之內來說，太陽與東方相合這件事，也只是有其邊際範圍的（因為國土本身有邊界、時節有變化）；既然有邊際、有限度，就必然是無常變化的；既然是無常變化的，就不可能是普遍恆常、遍一切處而不變的。所以說，「方」這個概念，終究只是徒有其名，而沒有真實不變的體性。</td><td class="bh10p12-guan"><b>結論——有邊故無常，無常故無實，方但假名</b>——即使退守到「一國之內」的最小範圍，論主仍能指出：凡有邊際的事物，必然隨時節、因緣而變化無常，而無常之法便不可能是「常相」「遍一切處」的真實法；層層推論至此，「方」作為一恆常實有之法的主張已徹底破除，只剩下「隨俗假名」這一層可以成立，完整呼應了本品開頭「隨世俗法所傳故說方，求方實不可得」的立論。</td></tr></tbody></table><p class="bh10p12-note">卷十第12品「破十方品」：經文先鋪陳十方（東南西北四維上下）世界、佛號、菩薩名的整齊對稱，論主隨即設問「方於蘊處界中無所攝」，展開一場精采辯論——外道援引六句義「陀羅驃」主張方為常相實法，並以「日出東方」為經驗證據；論主則以須彌山日照相對性層層破斥，證明方位隨觀察者而互轉、無固定自性，即使退守「一國之內」，仍以「有邊故無常，無常故不遍」收束，證成「方但有名而無實」。經在最頂，問答交錯完整、問在答前。　中觀關鍵詞：二諦分判 假名施設 無自性 有邊故無常 方但假名</p></div></div>
+<script id="wy-bh10p12-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh10p12Btn"),BOX=document.getElementById("bh10p12Box"),MODAL=document.getElementById("bh10p12Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=11;
+/*BHPLACE*/function place(){var z=document.getElementById("c10p12Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh10p12Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH10P12:END-->
 </body></html>
