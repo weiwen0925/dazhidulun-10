@@ -2569,4 +2569,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH10P12:END-->
+<!--WY-BH10P13:BEGIN-->
+<style id="wy-bh10p13-css">
+.bh10p13-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh10p13-fabbox.show{display:block;}
+.bh10p13-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh10p13-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh10p13-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh10p13-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh10p13-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh10p13-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh10p13-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh10p13-modal.open{display:flex;}
+.bh10p13-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh10p13-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh10p13-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh10p13-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh10p13-close:hover{background:#dde2e6;}
+.bh10p13-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh10p13-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh10p13-tbl th,.bh10p13-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh10p13-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh10p13-tbl thead th:nth-child(1){width:32%;}.bh10p13-tbl thead th:nth-child(2){width:41%;}.bh10p13-tbl thead th:nth-child(3){width:27%;}
+.bh10p13-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh10p13-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh10p13-guan{background:#eef2f5;color:#37505f;}
+.bh10p13-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh10p13-tbl tbody tr:nth-child(even) td.bh10p13-guan{background:#e8eef2;}
+.bh10p13-tbl tbody tr:nth-child(even) td.bh10p13-qa{background:#e7ecdb;}
+.bh10p13-tbl b{color:#8b2500;}
+.bh10p13-guan b{color:#2f6b5a;}
+.bh10p13-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh10p13-note b{color:#8b2500;}
+@media(max-width:900px){.bh10p13-fabbox{right:14px;}.bh10p13-tbl{font-size:11px;}.bh10p13-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh10p13-fabbox" id="bh10p13Box"><button class="bh10p13-btn" id="bh10p13Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh10p13-ic">譯</span><span class="bh10p13-ls"><span class="bh10p13-l1">本品 · 原文·白話·中觀</span><span class="bh10p13-l2">白話翻譯表</span></span></button></div><div class="bh10p13-modal" id="bh10p13Modal" role="dialog" aria-modal="true"><div class="bh10p13-card"><button class="bh10p13-close" id="bh10p13Close" type="button" aria-label="關閉">×</button><h3>卷十 · 第13品 白話翻譯表（三千大千世界變成為寶）</h3><p class="sub">原文↔白話↔中觀概念 逐段對照 · 大智度論卷十・第13品・三千大千世界變成為寶</p><table class="bh10p13-tbl"><caption>三千大千世界變成為寶 · 原文｜白話翻譯｜中觀概念（共15段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh10p13-src">爾時，是三千大千世界，變成為寶，華遍覆地，懸繒幡蓋，香樹、華樹，皆悉莊嚴。</td><td>那時，這三千大千世界，全部變成了珍寶所成，天華開遍地面，天空中懸掛著絲繒與幢幡傘蓋，還生出芳香的樹木與開花的樹木，一切都極盡莊嚴。</td><td class="bh10p13-guan"><b>經文總綱——莊嚴神變的全景素描</b>——短短一句經文濃縮了佛將說《般若波羅蜜》之前所示現的宇宙級神變，是全品論主逐層設問、層層解構的唯一根據與出發點。</td></tr><tr><td class="bh10p13-qa">問曰：此誰神力令地為寶？答曰：是佛無量神力變化所為。有人呪術、幻法，及諸鬼神、龍王、諸天等能變化少物；令三千大千世界皆為珍寶，餘人及梵天王皆所不能。</td><td>有人問：這是憑藉誰的神力，使大地變成珍寶的呢？回答說：這是佛以無量無邊的神力變化而成就的。世間雖然也有人靠咒術、幻術，或藉助鬼神、龍王、諸天等的力量，能變化出一些小東西；但要讓整個三千大千世界都變成珍寶，其餘的人乃至梵天王，都是做不到的。</td><td class="bh10p13-guan"><b>動力論——世俗神通與佛之無量神力的絕對差異</b>——論主先以排除法層層比較，凡夫、鬼神乃至梵天王都只能變化「少物」，唯獨佛能轉變整個宇宙，標舉出佛之神力並非程度之別，而是層次之別。</td></tr><tr><td class="bh10p13-src">佛入四禪中十四變化心，能令三千大千世界華香樹木，一切土地皆悉莊嚴；一切眾生皆悉和同，心轉為善。何以故？</td><td>佛入於四禪之中，運用十四種變化心的力量，就能使三千大千世界的花草樹木、一切土地全都莊嚴起來；而且一切眾生的心也都和睦融洽，轉而趨向善良。這是什麼緣故呢？</td><td class="bh10p13-guan"><b>心物同轉——外境莊嚴與眾生心念同步轉化</b>——佛之神變不僅改變外在物質世界，更同步令一切眾生「心轉為善」，揭示外境與內心本非兩截，正是「境隨心轉、心亦隨境轉」的雙向印證。</td></tr><tr><td class="bh10p13-src">莊嚴此世界，為說般若波羅蜜故。亦為十方諸菩薩客來，及諸天世人故莊嚴。如人請貴客，若一家請則莊嚴一家，一國主則莊嚴一國，轉輪聖王則莊嚴四天下，梵天王則莊嚴三千大千世界。佛為十方無量恒河沙等諸世界中主，是諸他方菩薩及諸天世人客來故。</td><td>之所以要莊嚴這個世界，是為了將要宣說般若波羅蜜的緣故；也是為了十方前來作客的諸位菩薩，以及諸天與世間人的緣故，才加以莊嚴。就像世間人邀請貴賓一樣：一家人請客，就莊嚴一家；一國之主請客，就莊嚴一國；轉輪聖王請客，就莊嚴四天下；梵天王請客，就莊嚴整個三千大千世界。而佛是十方無量如恆河沙數那麼多世界之中的至尊主人，因為有這些他方而來的菩薩以及諸天世人作客的緣故，所以才有此莊嚴。</td><td class="bh10p13-guan"><b>主客相待——以世間待客之禮譬喻莊嚴之等差</b>——論主以「請客莊嚴」的世間常理層層類比，說明莊嚴的規模與「主人的身分」相稱，佛為十方無量世界之主，故莊嚴遍及三千大千世界，此譬喻亦暗合因緣所生法「稱體而現」之理。</td></tr><tr><td class="bh10p13-src">亦為此彼眾人見此變化莊嚴，則生大心，生清淨歡喜心，從大心發大業，從大業得大報，受大報時更生大心，如是展轉增長，得成阿耨多羅三藐三菩提。以是故，變此世界皆悉為寶。</td><td>此外，也是因為此地與他方的大眾，見到這樣的神變莊嚴之後，便會生起廣大之心，生起清淨歡喜之心；從這廣大之心而發起廣大的事業，從廣大的事業而得到廣大的果報，領受廣大果報之時，又再生起更廣大之心，就這樣輾轉增長不已，最終得以成就無上正等正覺。正因為如此，才將這個世界全部變成珍寶。</td><td class="bh10p13-guan"><b>大心輾轉增長——莊嚴神變作為成佛之因的緣起鏈</b>——從見莊嚴→生大心→發大業→得大報→更生大心，形成一條環環相扣、輾轉增上的緣起鏈條，說明佛之莊嚴神變並非徒具形式的裝飾，而是精心安立的「增上緣」，直趨阿耨多羅三藐三菩提。</td></tr><tr><td class="bh10p13-src">云何名寶？寶有四種：金、銀、毘琉璃、頗梨。更有七種寶：金、銀、毘琉璃、頗梨、車𤦲、馬瑙、赤真珠（此珠極貴，非是珊瑚）。</td><td>什麼叫做「寶」呢？寶有四種：金、銀、毘琉璃（琉璃）、頗梨（水晶）。此外還有七種寶：金、銀、毘琉璃、頗梨、車𤦲（硨磲）、馬瑙（瑪瑙）、赤真珠（這種珠子極為珍貴，並不是珊瑚）。</td><td class="bh10p13-guan"><b>眾寶論起——從四寶到七寶的物質列舉</b>——論主先以世間熟知的四寶、七寶起論，為下文區分「人寶、天寶、菩薩寶」三階層次鋪墊基礎，說明「寶」之名相並非單一固定，而是隨層級與因緣而有種種差別開展。</td></tr><tr><td class="bh10p13-src">更復有寶：摩羅伽陀（此珠金翅鳥口邊出，綠色，能辟一切毒）、因陀尼羅（天青珠）、摩訶尼囉（大青珠）、鉢摩羅伽（赤光珠）、越闍（金剛）、龍珠、如意珠、玉貝、珊瑚、琥珀等種種名為寶。</td><td>此外還有各種珍寶：摩羅伽陀（這種珠子產於金翅鳥的口邊，呈綠色，能夠辟除一切毒害）、因陀尼羅（天青色的珠子）、摩訶尼囉（深青色的大珠子）、鉢摩羅伽（赤紅光澤的珠子）、越闍（金剛石）、龍珠、如意珠、玉貝、珊瑚、琥珀等等，這些種種名目都稱為寶。</td><td class="bh10p13-guan"><b>寶類無盡——物質形態的無限開展</b>——論主一一列舉珍寶名目及其特殊功能（如辟毒），顯示「寶」作為色法的一種，其種類可以無窮開展，但每一種寶的特殊「功能」，恰恰說明其性質皆繫於因緣和合，並非獨立自存的實體。</td></tr><tr><td class="bh10p13-src">是寶有三種：有人寶、天寶、菩薩寶。</td><td>這些珍寶可分為三種：有人間的寶、天上的寶、菩薩的寶。</td><td class="bh10p13-guan"><b>三階層次——寶之本體隨業力與功德而分判</b>——此句是全品「眾寶論」的總綱，將前文羅列的種種寶名收攝為人、天、菩薩三個層級，作為後文分別詳述其功能差異的骨架。</td></tr><tr><td class="bh10p13-src">人寶力少，唯有清淨光色，除毒、除鬼、除闇，亦除飢、渴、寒、熱種種苦事。</td><td>人間的寶物力量較小，只具有清淨的光澤色彩，能夠除去毒害、驅除鬼魅、破除黑暗，也能消除飢餓、口渴、寒冷、炎熱等種種苦事。</td><td class="bh10p13-guan"><b>人寶——功能有限的世間層級</b>——人寶僅能對治具體、有限的苦事（毒、鬼、闇、飢渴寒熱），其作用範圍侷限於物理與感官層面，是三階寶中功德力最淺薄的一層。</td></tr><tr><td class="bh10p13-src">天寶亦大、亦勝，常隨逐天身，可使令，可共語，輕而不重。</td><td>天上的寶物既廣大又殊勝，經常隨附在天人身邊，可以差遣使喚，也可以與它對話交談，質地輕盈而不沉重。</td><td class="bh10p13-guan"><b>天寶——具靈性而可役使的中間層級</b>——天寶已超越單純的物質功能，具有「可使令、可共語」的靈性與能動性，質地「輕而不重」也象徵其福報層次更為超越，居於人寶與菩薩寶之間的中間位階。</td></tr><tr><td class="bh10p13-src">菩薩寶勝於天寶，能兼有人寶、天寶事；又能令一切眾生知死此生彼因緣本末，譬如明鏡見其面像。復次，菩薩寶勝，能出種種法音；若為首飾寶冠，則雨十方無量世界諸佛上，幢幡、華蓋種種供養之具以供養佛。又雨衣被、臥具、生活之物，種種眾事，隨眾生所須皆悉雨之給施眾生；如是等種種眾寶，以除眾生貧窮苦厄。</td><td>菩薩的寶物又勝過天寶，它能同時兼具人寶與天寶的種種作用；又能使一切眾生了知自己此生彼世死此生彼的因緣本末，就好像照著明鏡能清楚看見自己的面容一樣。再者，菩薩寶最為殊勝的一點，是能發出種種說法的音聲；如果將它做成頭上的寶冠飾物，便能如雨一般落下，遍灑十方無量世界的諸佛之上，化作幢幡、華蓋等種種供養之具，用來供養諸佛。又能如雨一般降下衣服、臥具、日常生活所需的各種用品，隨順眾生所需，全部布施給予眾生；靠著這樣種種的珍寶，來消除眾生貧窮困苦的災厄。</td><td class="bh10p13-guan"><b>菩薩寶——功德圓滿、自利利他的最高層級</b>——菩薩寶不僅涵攝人寶、天寶的一切功能，更能開顯宿命因緣（知死此生彼）、能說法音、能雨供養具與生活資具以濟度眾生，展現「寶」的最高形態即是「以物顯法、以物濟生」，物質與菩提心已完全融攝為一。</td></tr><tr><td class="bh10p13-qa">問曰：是諸珍寶從何處出？答曰：金出山石沙赤銅中，真珠出魚腹中、竹中、蛇腦中，龍珠出龍腦中，珊瑚出海中石樹，生貝出虫甲中，銀出燒石，餘琉璃、頗梨等皆出山窟中。</td><td>有人問：這些珍寶都是從什麼地方出產的呢？回答說：金出產於山中的石頭、沙子、紅銅之中，真珠出產於魚腹之中、竹子之中、蛇的腦中，龍珠出產於龍的腦中，珊瑚出產於海中的石樹，貝殼出產於蟲甲之中，銀出產於經過燒煉的礦石，其餘的琉璃、頗梨等，也都出產於山中的洞窟之中。</td><td class="bh10p13-guan"><b>生起論——雙軌溯源之第一軌：自然產地</b>——論主逐一交代人間常見珍寶的自然出處，這是「物質溯源」的第一條軌道——依世俗因緣、依自然礦產與生物孕育而生，說明凡夫所知之寶皆有其可尋、可考的物理來源。</td></tr><tr><td class="bh10p13-src">如意珠出自佛舍利；若法沒盡時，諸舍利皆變為如意珠；譬如過千歲氷，化為頗梨珠。如是等諸寶，是人中常寶。</td><td>而如意珠，則是出自佛的舍利；當佛法完全滅沒之時，所有的舍利都會變化成為如意珠，就好比經過了千年的堅冰，會化為水晶珠一樣。像這樣的種種珍寶，都是人間恆常可見的寶物。</td><td class="bh10p13-guan"><b>相變譬喻——舍利化如意珠的第二軌：功德所生</b>——如意珠並非出自尋常礦產，而是由佛之舍利（無量功德所凝聚）轉化而成，開啟「物質溯源」的第二條軌道——不依自然因緣、而依功德力所生，正是「萬法唯心所現、心物本源不二」的具體例證。</td></tr><tr><td class="bh10p13-src">佛所莊嚴一切世界，是最殊勝，諸天所不能得，何以故？是從大功德所生。</td><td>而佛所莊嚴一切世界的珍寶，是最為殊勝的，就連諸天也無法獲得，這是什麼緣故呢？因為它是從佛廣大的功德之中所出生的。</td><td class="bh10p13-guan"><b>功德所生——一切莊嚴之寶的終極解釋</b>——此句一言收束全品「寶從何出」之問：佛所莊嚴之寶超越一切自然因緣所生的珍寶（連諸天亦不能得），根本原因在於它「從大功德所生」，徹底扣回「心物本源不二」的中觀究竟義。</td></tr><tr><td class="bh10p13-src">種種華、幡，如先說。香樹者，名阿伽樓（蜜香樹）、多伽樓（木香樹）、栴檀，如是等種種香樹。華樹名占匍（黃華樹）、阿輸迦（無憂花樹）、婆呵迦羅（赤華樹），如是等種種華樹。</td><td>至於種種天華、幢幡，就如同前面所說的一樣。而香樹，名為阿伽樓（沈水香樹）、多伽樓（木香樹）、栴檀（檀香樹），像這樣種種的香樹。華樹則名為占匍（黃色花樹）、阿輸迦（無憂花樹）、婆呵迦羅（赤色花樹），像這樣種種的花樹。</td><td class="bh10p13-guan"><b>莊嚴總結——回應經文四重意象的最後一環</b>——論文以逐一列舉香樹、華樹的名目，回應開篇經文「香樹、華樹，皆悉莊嚴」一句，為全品的「莊嚴神變」畫上具體而微的句點，呼應首章所揭示的四重意象架構。</td></tr></tbody></table><p class="bh10p13-note">卷十第13品「三千大千世界變成為寶」：經文以一句「變成為寶」總攝佛將說般若前的莊嚴神變，論主循「誰能為此」「為何莊嚴」「云何名寶」「寶從何出」四層設問層層展開——先以排除法標舉唯佛能轉變宇宙，再以三重動機（說法、待客、增長大心）說明莊嚴之因，繼以人寶／天寶／菩薩寶三階論眾寶之別，終以自然產地／功德所生雙軌溯源，並以「如意珠出自佛舍利」的相變譬喻證成「萬法唯心所現、心物本源不二」。經在最頂，問答交錯完整、問在答前。　中觀關鍵詞：因緣聚合 心力強弱 三階眾寶 雙軌溯源 心物不二</p></div></div>
+<script id="wy-bh10p13-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh10p13Btn"),BOX=document.getElementById("bh10p13Box"),MODAL=document.getElementById("bh10p13Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=12;
+/*BHPLACE*/function place(){var z=document.getElementById("c10p13Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh10p13Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH10P13:END-->
 </body></html>
