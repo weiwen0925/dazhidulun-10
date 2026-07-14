@@ -2620,4 +2620,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH10P13:END-->
+<!--WY-BH10P14:BEGIN-->
+<style id="wy-bh10p14-css">
+.bh10p14-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh10p14-fabbox.show{display:block;}
+.bh10p14-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh10p14-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh10p14-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh10p14-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh10p14-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh10p14-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh10p14-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh10p14-modal.open{display:flex;}
+.bh10p14-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh10p14-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh10p14-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh10p14-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh10p14-close:hover{background:#dde2e6;}
+.bh10p14-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh10p14-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh10p14-tbl th,.bh10p14-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh10p14-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh10p14-tbl thead th:nth-child(1){width:32%;}.bh10p14-tbl thead th:nth-child(2){width:41%;}.bh10p14-tbl thead th:nth-child(3){width:27%;}
+.bh10p14-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh10p14-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh10p14-guan{background:#eef2f5;color:#37505f;}
+.bh10p14-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh10p14-tbl tbody tr:nth-child(even) td.bh10p14-guan{background:#e8eef2;}
+.bh10p14-tbl tbody tr:nth-child(even) td.bh10p14-qa{background:#e7ecdb;}
+.bh10p14-tbl b{color:#8b2500;}
+.bh10p14-guan b{color:#2f6b5a;}
+.bh10p14-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh10p14-note b{color:#8b2500;}
+@media(max-width:900px){.bh10p14-fabbox{right:14px;}.bh10p14-tbl{font-size:11px;}.bh10p14-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh10p14-fabbox" id="bh10p14Box"><button class="bh10p14-btn" id="bh10p14Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh10p14-ic">譯</span><span class="bh10p14-ls"><span class="bh10p14-l1">本品 · 原文·白話·中觀</span><span class="bh10p14-l2">白話翻譯表</span></span></button></div><div class="bh10p14-modal" id="bh10p14Modal" role="dialog" aria-modal="true"><div class="bh10p14-card"><button class="bh10p14-close" id="bh10p14Close" type="button" aria-label="關閉">×</button><h3>卷十 · 第14品 白話翻譯表（華積世界喻）</h3><p class="sub">原文↔白話↔中觀概念 逐段對照 · 大智度論卷十・第14品・華積世界與諸大菩薩</p><table class="bh10p14-tbl"><caption>華積世界喻 · 原文｜白話翻譯｜中觀概念（共4段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh10p14-src">譬如華積世界、普華世界，妙德菩薩、善住意菩薩，及餘大威神諸菩薩，皆在彼住。</td><td>就好比華積世界、普華世界那樣，妙德菩薩（文殊師利）、善住意菩薩，以及其餘具有廣大威神之力的諸位菩薩，都是安住在那些世界之中的。</td><td class="bh10p14-guan"><b>經文喻體——以他方淨土為此土神變之譬喻</b>——經文以「譬如」一語，將佛此刻所變化的娑婆莊嚴相，比擬於他方淨土（華積、普華世界）的常態莊嚴，並舉出文殊、善住意二大菩薩為代表，此句雖僅一行，卻埋下下文三重詰問的伏筆。</td></tr><tr><td class="bh10p14-qa">問曰：何以言「譬如華積世界」？答曰：彼世界常有淨華，此世界變化一時，故以喻也。譬喻法，以小喻大。如人面好，譬如滿月。</td><td>有人問：為什麼經文要說「就好比華積世界」呢？回答說：那個世界是恆常有清淨天華的，而這個世界（娑婆）只是暫時一時變化而成的，所以才用「譬如」來作比喻。譬喻的原則，是用比較小、比較容易理解的事物，來比喻比較大、比較不容易理解的事物。就像形容一個人容貌姣好，會說「面容如同滿月」一樣。</td><td class="bh10p14-guan"><b>譬喻法則——以小喻大、以恆常喻暫時</b>——論主點出「譬如」二字的深意：娑婆之莊嚴僅是佛神力暫時示現，而華積世界之淨華莊嚴則是恆常本具的果報，二者性質有別，卻可藉「以小喻大」的譬喻法則相互溝通，讓聽眾藉由已知（華積世界）理解未知（此刻的娑婆神變）。</td></tr><tr><td class="bh10p14-qa">問曰：更有十方諸清淨世界，如阿彌陀佛安樂世界等，何以故但以普華世界為喻？答曰：阿彌陀佛世界，不如華積世界。何以故？法積比丘，佛雖將至十方觀清淨世界，功德力薄，不能得見上妙清淨世界，以是故，世界不如。復次，當佛變化此世界時，正與華積世界相似。以是故言「譬如華積世界」。</td><td>有人又問：十方還有其他種種清淨世界，例如阿彌陀佛的安樂世界等等，為什麼偏偏只用普華世界來作譬喻呢？回答說：阿彌陀佛的世界，其實比不上華積世界。這是什麼緣故呢？因為（過去）法積比丘，雖然佛曾帶領他前往十方觀看清淨世界，但由於他自身功德力尚淺薄，因此無法親見到最為殊勝美妙的清淨世界，所以他所見到（並轉述）的世界層次便有所不及。再者，當佛此刻變化這個娑婆世界的時候，所呈現的莊嚴景象，正好與華積世界十分相似，所以經文才說「就好比華積世界」。</td><td class="bh10p14-guan"><b>擇喻之理——功德力深淺決定所見世界層次</b>——論主藉「法積比丘功德力薄，故不能見上妙清淨世界」一事，說明取喻與否並非隨意，而是取決於能否「見」與「相似」——世界之莊嚴殊勝與觀者自身功德力深淺相應，此正是境隨心轉、境亦隨功德深淺而顯現差異之理。</td></tr><tr><td class="bh10p14-qa">問曰：更有餘大菩薩，如毘摩羅詰、觀世音、遍吉菩薩等，何以不言此諸菩薩在彼住，而但言文殊尸利、善住意菩薩？答曰：是遍吉菩薩，一一毛孔常出諸佛世界及諸佛菩薩，遍滿十方以化眾生，無適住處。文殊尸利分身變化入五道中，或作聲聞，或作緣覺，或作佛身，如《首楞嚴三昧經》中說「文殊師利菩薩，過去世作龍種尊佛」，「七十二億世作辟支迦佛」，是可言可說。遍吉菩薩不可量、不可說，住處不可知；若住，應在一切世界中住，是故不說。復次，「及諸大威神菩薩」者，亦應總說遍吉等諸大菩薩。</td><td>有人又問：還有其餘的大菩薩，例如維摩詰、觀世音、遍吉（普賢）菩薩等等，為什麼經文不說這些菩薩也安住在那裡，卻只說文殊師利、善住意菩薩呢？回答說：這位遍吉菩薩，他身上每一個毛孔，都經常示現出無數諸佛世界以及諸佛菩薩，遍滿十方以教化眾生，並沒有一個固定的安住之處。而文殊師利菩薩則是分身變化，進入五道之中，有時示現作聲聞身，有時示現作緣覺身，有時示現作佛身，就如同《首楞嚴三昧經》中所說：「文殊師利菩薩，在過去世曾作過龍種尊佛」，又說「在七十二億世中曾作過辟支迦佛」，像這樣的事蹟，是可以具體言說、描述的。而遍吉菩薩則是不可測量、不可言說的，他的住處根本無法確知；若真要說他安住之處，應當說是安住在一切世界之中，所以經文才不特別提及他。再者，經文所說「以及其餘具有廣大威神之力的諸位菩薩」這一句，其實也已經總括說明了遍吉菩薩等其餘一切大菩薩了。</td><td class="bh10p14-guan"><b>可說與不可說——文殊之分身歷歷可考、普賢之遍在不可量</b>——論主藉文殊「分身可說、可考」與普賢「遍滿十方、住處不可知」的對比，說明經文列名與否，並非菩薩果位高下之別，而是「可具體言說者則舉其名，不可思議、遍一切處者則以『及餘大威神菩薩』一語總攝」，體現中觀「言詮有其極限，不可思議處當以總相收攝」的智慧。</td></tr></tbody></table><p class="bh10p14-note">卷十第14品「華積世界與諸大菩薩」：經文以「譬如華積世界、普華世界，妙德菩薩、善住意菩薩，及餘大威神諸菩薩，皆在彼住」一句收束佛所變化之境，論主隨即開出三重詰問——何以言「譬如」、何以獨取普華世界為喻而不取阿彌陀佛安樂世界、何以只舉文殊與善住意二尊而不舉維摩詰觀音普賢等——依次以「以小喻大」之譬喻法則、「功德力深淺決定所見世界層次」、「文殊分身可說、普賢遍在不可量」層層解構，證成經文取捨皆有嚴謹義理依據，非隨意鋪陳。經在最頂，問答交錯完整、問在答前。　中觀關鍵詞：譬喻法則 功德力深淺 可說與不可說 遍在無住處 境隨心轉</p></div></div>
+<script id="wy-bh10p14-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh10p14Btn"),BOX=document.getElementById("bh10p14Box"),MODAL=document.getElementById("bh10p14Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=13;
+/*BHPLACE*/function place(){var z=document.getElementById("c10p14Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh10p14Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH10P14:END-->
 </body></html>
