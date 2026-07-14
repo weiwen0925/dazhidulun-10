@@ -2467,4 +2467,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH10P10:END-->
+<!--WY-BH10P11:BEGIN-->
+<style id="wy-bh10p11-css">
+.bh10p11-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh10p11-fabbox.show{display:block;}
+.bh10p11-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh10p11-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh10p11-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh10p11-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh10p11-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh10p11-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh10p11-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh10p11-modal.open{display:flex;}
+.bh10p11-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh10p11-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh10p11-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh10p11-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh10p11-close:hover{background:#dde2e6;}
+.bh10p11-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh10p11-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh10p11-tbl th,.bh10p11-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh10p11-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh10p11-tbl thead th:nth-child(1){width:32%;}.bh10p11-tbl thead th:nth-child(2){width:41%;}.bh10p11-tbl thead th:nth-child(3){width:27%;}
+.bh10p11-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh10p11-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh10p11-guan{background:#eef2f5;color:#37505f;}
+.bh10p11-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh10p11-tbl tbody tr:nth-child(even) td.bh10p11-guan{background:#e8eef2;}
+.bh10p11-tbl tbody tr:nth-child(even) td.bh10p11-qa{background:#e7ecdb;}
+.bh10p11-tbl b{color:#8b2500;}
+.bh10p11-guan b{color:#2f6b5a;}
+.bh10p11-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh10p11-note b{color:#8b2500;}
+@media(max-width:900px){.bh10p11-fabbox{right:14px;}.bh10p11-tbl{font-size:11px;}.bh10p11-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh10p11-fabbox" id="bh10p11Box"><button class="bh10p11-btn" id="bh10p11Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh10p11-ic">譯</span><span class="bh10p11-ls"><span class="bh10p11-l1">本品 · 原文·白話·中觀</span><span class="bh10p11-l2">白話翻譯表</span></span></button></div><div class="bh10p11-modal" id="bh10p11Modal" role="dialog" aria-modal="true"><div class="bh10p11-card"><button class="bh10p11-close" id="bh10p11Close" type="button" aria-label="關閉">×</button><h3>卷十 · 第11品 白話翻譯表（釋初品中十號功德）</h3><p class="sub">原文↔白話↔中觀概念 逐段對照 · 大智度論卷十・第11品・釋初品中十號功德</p><table class="bh10p11-tbl"><caption>如來十號功德頌 · 原文｜白話翻譯｜中觀概念（共12段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh10p11-src">諸出家、在家菩薩，及諸童男、童女，頭面禮釋迦牟尼佛足，各以供養具，供養恭敬，尊重讚歎釋迦牟尼佛。是諸出家、在家菩薩，及諸童男、童女，各各以善根福德力故，得供養釋迦牟尼佛多陀阿伽度、阿羅呵、三藐三佛陀。</td><td>所有出家與在家的菩薩，以及所有的童男童女，都以頭面觸地的方式禮拜釋迦牟尼佛的雙足，各自拿出供養的器具，恭敬供養、尊重讚歎釋迦牟尼佛。這些出家、在家的菩薩，以及童男童女，都是因為各自宿世所修的善根與福德之力，才能夠有幸供養釋迦牟尼佛——這位如來、應供、正遍知。</td><td class="bh10p11-guan"><b>供養之緣——福德為因，感佛為果</b>——經文先鋪陳大眾以最恭敬之禮（頭面禮足）供養如來，並點明「得供養佛」本身即是善根福德所感之果報，說明能親見、親近佛陀說法，並非偶然，而是因緣和合、福德具足的結果，為下文開展「如來十號」之功德鋪墊根本因緣。</td></tr><tr><td class="bh10p11-src">論：如說偈：</td><td>論主接著說：正如偈頌中所說：</td><td class="bh10p11-guan"><b>由經入頌——名相轉為修證地圖</b>——論主藉此一句承先啟後，將前面經文中提到的佛陀十個聖號（多陀阿伽度、阿羅呵、三藐三佛陀等），透過底下這首偈頌逐一解釋其所以得名的緣由，把單純的名相羅列，轉化成一套「以德立名」的完整修證次第。</td></tr><tr><td class="bh10p11-src">諸聖所來道，佛亦如是來；實相及所去，佛亦爾無異；諸聖如實語，佛亦如實說：以是故名佛，多陀阿伽度。</td><td>過去一切聖者所走過、所證得的道路，佛也是同樣這樣走來、這樣證得；聖者所證的實相以及所趣向之處，佛也完全沒有差異；聖者如實而說真理，佛也同樣如實宣說——因此之故，稱佛為「多陀阿伽度」（如來）。</td><td class="bh10p11-guan"><b>如實而來——無生無滅之實相</b>——「如來」之名，並非指佛有一個獨特於眾聖之外的來去之相，而是指佛與過去諸聖所證的實相完全無異，來去、言說皆與實相相應而無所增減，此正顯諸法實相本自如如、無來無去、諸聖所同證之理。</td></tr><tr><td class="bh10p11-src">忍鎧心堅固，精進弓力強，智慧利勁箭，破憍慢諸賊。應受天世人，一切諸供養，以是故名佛，以為阿羅訶。</td><td>以忍辱作為堅固的鎧甲，護持自心；以精進作為強而有力的弓；以智慧作為銳利的箭矢，用來破除憍慢等種種煩惱之賊。因為已經徹底破除了這些煩惱賊，所以應當接受天、人、世間一切眾生的供養——因此之故，稱佛為「阿羅訶」（應供，義為殺賊）。</td><td class="bh10p11-guan"><b>破賊與應供——因果相待的假名</b>——「應供」之名，建立在「殺賊」（破除煩惱）這一因上：正因徹底破除我執、憍慢等賊，才堪受供養；能供、所供、應供三者皆依煩惱斷盡之因緣而施設安立，並非佛自身本具一個固定不變、名為「應供」的實體。</td></tr><tr><td class="bh10p11-src">正知苦實相，亦實知苦集，知苦滅實相，亦知苦滅道。真正解四諦，定實不可變，是故十方中，號三藐三佛。</td><td>真正了知苦的真實相狀，也如實了知苦生起的原因（集）；了知苦徹底止息的真實相狀，也了知能滅苦的道路（道）。真正透徹理解苦、集、滅、道四聖諦，這種了知確實、堅定、不可動搖——因此之故，在十方世界中，都尊稱佛為「三藐三佛陀」（正遍知）。</td><td class="bh10p11-guan"><b>四諦與正遍知——如實知即是遍知</b>——「正遍知」並非指博聞強記式的知識廣博，而是指對苦、集、滅、道四諦「定實不可變」的決定性徹見；因為四諦統攝一切緣起與還滅之理，如實知四諦即等同於遍知一切法的真實相，此即「正遍知」得名之由。</td></tr><tr><td class="bh10p11-src">得微妙三明，清淨行亦具，是故號世尊，鞞闍遮羅那。</td><td>已經證得微妙的三種明（宿命明、天眼明、漏盡明），同時也具足清淨的戒行——因此之故，尊稱佛為「鞞闍遮羅那」（明行足）。</td><td class="bh10p11-guan"><b>明與行雙運——解行不二</b>——此號將「智慧的證悟」（三明）與「德行的實踐」（清淨行）並舉，說明真正的覺悟並非只是知見上的通達，而必須與清淨行持相應具足，解行雙運、缺一不可，方稱圓滿。</td></tr><tr><td class="bh10p11-src">解知一切法，自得妙道去，或時方便說，愍念一切故。滅除老病死，令到安隱處，以是故名佛，以為修伽陀。</td><td>透徹了知一切法的真實相，自己已經證得殊勝美妙的解脫之道，得以超越而去；但佛有時仍會以善巧方便來說法，這是因為愍念一切眾生的緣故。佛要滅除眾生的老、病、死等痛苦，讓他們到達安穩無患之處——因此之故，稱佛為「修伽陀」（善逝）。</td><td class="bh10p11-guan"><b>善逝而不捨——自利圓滿仍利他不息</b>——「善逝」看似只強調佛自身超越生死、妙道獨往，但偈頌緊接著補上「愍念一切」、「方便說」，說明自利之圓滿與利他之悲心並不相違，反而正是自利圓滿之後，才更能無所罣礙地示現方便、廣度眾生，此即大乘「悲智雙運」之精神所在。</td></tr><tr><td class="bh10p11-src">知世所從來，亦知世滅道，以是故名佛，為路迦鞞陀。</td><td>了知世間種種現象是如何生起、從何而來，也了知使世間趣向止息的道路——因此之故，稱佛為「路迦鞞陀」（世間解）。</td><td class="bh10p11-guan"><b>世間解——洞悉緣起流轉與還滅</b>——「世間解」所了知的，正是緣起法的一體兩面：世間法如何依因緣和合而生起（流轉門），以及如何依道而趣向止息（還滅門），二者若不能同時了知，便不足以稱為真正通達世間實相。</td></tr><tr><td class="bh10p11-src">禪戒智等眼，無及況出上，以是故名佛，為阿耨多羅。</td><td>在禪定、戒行、智慧等種種修證的眼目上，沒有任何人能夠與佛相提並論，更何況超越佛之上——因此之故，稱佛為「阿耨多羅」（無上士）。</td><td class="bh10p11-guan"><b>無上——非自誇之詞，乃緣起中的極致</b>——「無上」並非佛自我標榜之詞，而是就戒、定、慧等一切修證功德而言，再無任何一法能與之相等或超越；此無上之位，仍是相待於眾生修證程度而安立的假名，非離眾生別有一個獨立自存、名為「無上」的實體。</td></tr><tr><td class="bh10p11-src">大悲度眾生，軟善教調御，以是故名佛，富樓沙曇藐。</td><td>以廣大的悲心度化眾生，用柔軟善巧的方式教導、調伏、駕御他們——因此之故，稱佛為「富樓沙曇藐」（調御丈夫）。</td><td class="bh10p11-guan"><b>調御——大悲為體，方便為用</b>——「調御丈夫」凸顯的是教化方法上的柔軟善巧：面對剛強難調的眾生，佛不以強制壓服，而以大悲為根本、以柔軟方便為手段，隨順眾生根性而調伏引導，體現悲心與智慧方便的圓融運用。</td></tr><tr><td class="bh10p11-src">智慧無煩惱，說最上解脫，以是故名佛，提婆摩㝹舍。</td><td>以毫無煩惱染污的清淨智慧，宣說最殊勝、最究竟的解脫之法——因此之故，稱佛為「提婆摩㝹舍」（天人師）。</td><td class="bh10p11-guan"><b>天人師——無漏智為說法之本</b>——「天人師」之所以堪為天、人共同的導師，根本在於其智慧已徹底斷盡煩惱、無有染污，唯有從無漏清淨智慧中流出的教法，才稱得上是「最上解脫」之說，足以普遍利益天、人二趣一切根機的眾生。</td></tr><tr><td class="bh10p11-src">三世動不動，盡及不盡法，道樹下悉知，是故名為佛。</td><td>過去、現在、未來三世當中，一切有為變動之法與無為不動之法，一切窮盡（有為）與不窮盡（無為）之法，佛都在菩提樹下完全了知無遺——因此之故，稱其名為「佛」。</td><td class="bh10p11-guan"><b>動與不動雙照——總攝十號之辯證統一</b>——第十號「佛」不再是與前九號平行並列的又一名相，而是將「動」（緣起有為）與「不動」（性空無為）同時了知、圓融無礙的總持之號，把前面九號所分別展現的自證與利他、真諦與俗諦，收攝為一體，正是中觀「即有為而無為、即差別而平等」的究竟體現。</td></tr></tbody></table><p class="bh10p11-note">卷十第11品「釋初品中十號功德」：經文先敘出家在家菩薩、童男童女以善根福德力得供養如來十號功德，論主引一首功德頌，逐一解釋如來、應供、正遍知、明行足、善逝、世間解、無上士、調御丈夫、天人師、佛十個聖號「以德立名」之緣由。經在最頂，偈頌依序完整不缺。　中觀關鍵詞：如實而來 破賊應供 正遍知即如實知四諦 解行雙運 悲智雙運 動不動雙照</p></div></div>
+<script id="wy-bh10p11-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh10p11Btn"),BOX=document.getElementById("bh10p11Box"),MODAL=document.getElementById("bh10p11Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=10;
+/*BHPLACE*/function place(){var z=document.getElementById("c10p11Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh10p11Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH10P11:END-->
 </body></html>
