@@ -2161,4 +2161,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH10P4:END-->
+<!--WY-BH10P5:BEGIN-->
+<style id="wy-bh10p5-css">
+.bh10p5-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh10p5-fabbox.show{display:block;}
+.bh10p5-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh10p5-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh10p5-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh10p5-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh10p5-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh10p5-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh10p5-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh10p5-modal.open{display:flex;}
+.bh10p5-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh10p5-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh10p5-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh10p5-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh10p5-close:hover{background:#dde2e6;}
+.bh10p5-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh10p5-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh10p5-tbl th,.bh10p5-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh10p5-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh10p5-tbl thead th:nth-child(1){width:32%;}.bh10p5-tbl thead th:nth-child(2){width:41%;}.bh10p5-tbl thead th:nth-child(3){width:27%;}
+.bh10p5-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh10p5-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh10p5-guan{background:#eef2f5;color:#37505f;}
+.bh10p5-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh10p5-tbl tbody tr:nth-child(even) td.bh10p5-guan{background:#e8eef2;}
+.bh10p5-tbl tbody tr:nth-child(even) td.bh10p5-qa{background:#e7ecdb;}
+.bh10p5-tbl b{color:#8b2500;}
+.bh10p5-guan b{color:#2f6b5a;}
+.bh10p5-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh10p5-note b{color:#8b2500;}
+@media(max-width:900px){.bh10p5-fabbox{right:14px;}.bh10p5-tbl{font-size:11px;}.bh10p5-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh10p5-fabbox" id="bh10p5Box"><button class="bh10p5-btn" id="bh10p5Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh10p5-ic">譯</span><span class="bh10p5-ls"><span class="bh10p5-l1">本品 · 原文·白話·中觀</span><span class="bh10p5-l2">白話翻譯表</span></span></button></div><div class="bh10p5-modal" id="bh10p5Modal" role="dialog" aria-modal="true"><div class="bh10p5-card"><button class="bh10p5-close" id="bh10p5Close" type="button" aria-label="關閉">×</button><h3>卷十 · 第5品 白話翻譯表（供養觀之中觀解構）</h3><p class="sub">原文↔白話↔中觀概念 逐段對照 · 大智度論卷十・第五品・供養觀之中觀解構</p><table class="bh10p5-tbl"><caption>供養東方諸佛三主線 · 原文｜白話翻譯｜中觀概念（共9段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh10p5-src">皆供養、恭敬、尊重、讚歎東方諸佛。</td><td>（這些菩薩）都恭敬供養、尊重讚歎東方的諸佛。</td><td class="bh10p5-guan"><b>經文標宗——一句「皆」字，埋下時空悖論的引信</b>——經文僅此一句，卻藏著關鍵的「皆」字：十方諸佛無量無邊，菩薩要如何「皆」供養得盡？這一字看似平常，實則是論主展開整品辯證的起點。</td></tr><tr><td class="bh10p5-qa">問曰：若皆供養東方諸佛，諸佛甚多，何時當訖，得來此間？</td><td>有人問：如果要供養遍東方的一切諸佛，諸佛的數目如此眾多，什麼時候才能供養完畢，來到這個娑婆世界呢？</td><td class="bh10p5-guan"><b>設難——線性時空下的供養悖論</b>——此問以凡夫慣有的線性因果思維發難：若供養須逐一而行，東方諸佛無量，勢必耗盡無窮時劫，永無抵達娑婆世界之日。這正是把菩薩行誤置於凡夫的時空框架中所生的錯覺。</td></tr><tr><td class="bh10p5-qa">答曰：是諸菩薩非作人、天法供養，自行菩薩供養法。菩薩供養法，身入禪定，其身直進，從其身邊出無量身，化作種種供養之物，滿諸佛世界。譬如龍王行時，從身出水，普雨天下。</td><td>回答說：這些菩薩並非用凡夫、天人那種供養的方式，而是自行運用菩薩獨有的供養法門。菩薩的供養法門，是入於禪定之中，自身徑直前行，同時從自身周邊化現出無量分身，變化出種種供養之物，遍滿十方一切諸佛世界。就好比龍王行雲布雨時，從自身湧現雨水，普遍降雨於天下一般。</td><td class="bh10p5-guan"><b>破線性時空見——禪定力平行示現，非次第逐一</b>——論主的解答一舉打破「供養必須依序、逐一完成」的凡夫線性邏輯：菩薩以禪定力「一時遍現無量身」，同步供養十方諸佛，這是「一即一切、一切即一」的平行運作，而非時間軸上的先後排隊。龍王行雨之喻，正說明此一化現並非分別造作，而是禪定功德自然遍潤十方，時空的隔閡在證入空性的境界中並無實質障礙。</td></tr><tr><td class="bh10p5-qa">問曰：此諸菩薩欲詣釋迦牟尼佛，何以中道供養諸佛？</td><td>有人問：這些菩薩既然想要前往釋迦牟尼佛所在之處，為什麼還要在半路供養沿途的諸佛呢？</td><td class="bh10p5-guan"><b>設難——目標既定，何須旁騖之惑</b>——此問質疑菩薩既已鎖定「往詣釋迦牟尼佛」這個終極目的地，中途供養他佛豈非徒耗心力、偏離正題？這是以「目的與手段」二分的世俗思維審視菩薩行。</td></tr><tr><td class="bh10p5-qa">答曰：諸佛第一福田，若供養者得大果報。譬如人廣修田業，為多得穀故。諸菩薩見諸佛供養，得佛果報，是故供養。</td><td>回答說：諸佛是最殊勝的福田，如果能夠加以供養，便能獲得廣大的果報。就好比一個人廣泛地耕耘田地，為的是能夠收穫更多的穀物一樣。諸菩薩見到諸佛便加以供養，能因此獲得成佛的果報，所以才處處供養。</td><td class="bh10p5-guan"><b>破目的手段二分——供養本身即是修行，非途中耽擱</b>——論主指出：供養諸佛並非「前往釋迦牟尼佛」這一目標之外的旁騖，而正是成佛之因本身——「諸佛第一福田」一語，將「沿途供養」與「終極目標」統攝於同一因果鏈中，破除世俗「目的與手段對立」的思維定式，彰顯菩薩道處處是道場、步步皆修行的中觀精神。</td></tr><tr><td class="bh10p5-src">復次，菩薩常敬重於佛，如人敬重父母。諸菩薩蒙佛說法，得種種三昧、種種陀羅尼、種種神力，知恩故廣供養。</td><td>再者，菩薩經常敬重諸佛，就如同世人敬重自己的父母一樣。諸菩薩蒙受諸佛說法教化，因而獲得種種三昧、種種陀羅尼、種種神通之力，正因為知恩，所以廣行供養。</td><td class="bh10p5-guan"><b>知恩報本——供養動機的第二層遞進</b>——繼「福田得果」的自利動機之後，論主再進一層，揭示供養更深的倫理根源：如子女敬重父母般的「知恩報本」。菩薩三昧、陀羅尼、神力皆蒙佛陀教化而生，供養正是對此法恩的如實回應，將供養從單純的果報交換，提升為知恩圖報的德行實踐。</td></tr><tr><td class="bh10p5-src">如《法華經》中，藥王菩薩從佛得一切變現色身三昧，作是思惟：「我當云何供養佛及法華三昧？」即時飛到天上，以三昧力，雨七寶、華、香、幡蓋，供養於佛。出三昧已，意猶不足。於千二百歲，服食眾香，飲諸香油，然後以天白疊纏身而燒，自作誓言：「使我身光明，照八十恒河沙等佛世界！」是八十恒河沙等世界中諸佛讚言：「善哉！善哉！善男子！以身供養，是為第一！勝以國城妻子供養百千萬倍，不可以譬喻為比。」於千二百歲，身然不滅。</td><td>就如《法華經》中所說：藥王菩薩從佛陀那裡獲得能夠變現一切色身的三昧，他心中思惟：「我應當如何供養佛陀以及《法華經》的三昧法門呢？」當下便飛升到天上，運用三昧之力，降下七寶、香花、幡蓋等雨，供養於佛。出定之後，心中仍覺得供養得不夠圓滿。於是在一千二百年間，服食各種香料，飲用各種香油，然後用天界的白氎布纏裹自己的身體，點火自焚，並發下誓願：「願我此身所發出的光明，能照耀八十恒河沙數那麼多的佛世界！」那八十恒河沙數世界中的諸佛，都同聲讚歎說：「善哉！善哉！善男子！以自身供養，是供養中的第一等！勝過用國城、妻子作供養的百千萬倍，無法用任何譬喻來相提並論。」在那一千二百年間，藥王菩薩的身體燃燒而不熄滅。</td><td class="bh10p5-guan"><b>公案——燃身供養，推至捨身無我的究竟</b>——藥王菩薩的公案，把供養的動機推向第三層、也是最徹底的一層：從「福田得果」「知恩報本」，一路推進到「捨棄內身、破除我見」的究竟供養。以身供養之所以「勝於國城妻子供養百千萬倍」，並非在於物質分量的大小，而在於它直接對治眾生最深固的「薩迦耶見」（身見）——連自身這個最執著的所依都能捨棄，正是「無我」的具體實踐，也是中觀「五蘊本空」義理最徹底的行動註腳。</td></tr><tr><td class="bh10p5-src">復次，是供養佛，得無量名聞福德利益，諸不善事皆悉滅除，諸善根得增長，今世、後世常得供養報，久後得作佛。</td><td>再者，供養諸佛，能獲得無量的名聲與福德利益，種種不善之事都能因此消除滅盡，種種善根也能因此增長，今生、來世都能常常獲得供養的果報，久遠之後終能成就佛道。</td><td class="bh10p5-guan"><b>供養果報總攝——福慧雙修，趣向究竟佛果</b>——此段將供養的利益作一總結性的鋪陳：消惡、增善、感得世世供養之報，最終導向成佛的究竟果位。供養不僅是單一善行，更是貫穿福德與智慧二種資糧、層層累積、終抵佛果的完整修行軸線。</td></tr><tr><td class="bh10p5-src">如是供養佛，得種種無量利。以是故，諸菩薩供養佛。</td><td>像這樣供養諸佛，能夠獲得種種無量的利益。正因如此，諸菩薩才會廣泛地供養諸佛。</td><td class="bh10p5-guan"><b>總結——供養無量利，收束三層動機辯證</b>——這一句作為全品的總收束，把前文福田、報恩、捨身無我三層遞進的動機，統攝於「供養得無量利」一語之中，呼應開篇「皆供養」之問，說明菩薩供養看似耗費無盡時空，實則所成就的利益同樣無量無邊——正是以空觀照見「能供、所供、供養行為」三輪體空，供養方能真正周遍而無窮盡。</td></tr></tbody></table><p class="bh10p5-note">卷十第5品「供養觀之中觀解構」：經文「皆供養、恭敬、尊重、讚歎東方諸佛」一句，論主以兩問破解供養的時空與動機悖論——菩薩以禪定力平行示現供養十方，破線性時空見；供養即修行本身，非途中耽擱；再以福田、知恩報本、藥王菩薩燃身供養三層遞進，將供養動機推至捨身無我的究竟。經在最頂，二問二答俱全，問在答前。　中觀關鍵詞：禪定力平行示現破線性時空 供養即修行 知恩報本 燃身供養破薩迦耶見 三輪體空</p></div></div>
+<script id="wy-bh10p5-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh10p5Btn"),BOX=document.getElementById("bh10p5Box"),MODAL=document.getElementById("bh10p5Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=4;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var z=document.getElementById("c10p5Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh10p5Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH10P5:END-->
 </body></html>
