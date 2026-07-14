@@ -2212,4 +2212,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH10P5:END-->
+<!--WY-BH10P6:BEGIN-->
+<style id="wy-bh10p6-css">
+.bh10p6-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh10p6-fabbox.show{display:block;}
+.bh10p6-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh10p6-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh10p6-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh10p6-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh10p6-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh10p6-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh10p6-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh10p6-modal.open{display:flex;}
+.bh10p6-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh10p6-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh10p6-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh10p6-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh10p6-close:hover{background:#dde2e6;}
+.bh10p6-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh10p6-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh10p6-tbl th,.bh10p6-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh10p6-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh10p6-tbl thead th:nth-child(1){width:32%;}.bh10p6-tbl thead th:nth-child(2){width:41%;}.bh10p6-tbl thead th:nth-child(3){width:27%;}
+.bh10p6-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh10p6-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh10p6-guan{background:#eef2f5;color:#37505f;}
+.bh10p6-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh10p6-tbl tbody tr:nth-child(even) td.bh10p6-guan{background:#e8eef2;}
+.bh10p6-tbl tbody tr:nth-child(even) td.bh10p6-qa{background:#e7ecdb;}
+.bh10p6-tbl b{color:#8b2500;}
+.bh10p6-guan b{color:#2f6b5a;}
+.bh10p6-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh10p6-note b{color:#8b2500;}
+@media(max-width:900px){.bh10p6-fabbox{right:14px;}.bh10p6-tbl{font-size:11px;}.bh10p6-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh10p6-fabbox" id="bh10p6Box"><button class="bh10p6-btn" id="bh10p6Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh10p6-ic">譯</span><span class="bh10p6-ls"><span class="bh10p6-l1">本品 · 原文·白話·中觀</span><span class="bh10p6-l2">白話翻譯表</span></span></button></div><div class="bh10p6-modal" id="bh10p6Modal" role="dialog" aria-modal="true"><div class="bh10p6-card"><button class="bh10p6-close" id="bh10p6Close" type="button" aria-label="關閉">×</button><h3>卷十 · 第6品 白話翻譯表（頭面禮足·一面立）</h3><p class="sub">原文↔白話↔中觀概念 逐段對照 · 大智度論卷十・第六品・頭面禮足一面立</p><table class="bh10p6-tbl"><caption>頭面禮足·一面立 · 原文｜白話翻譯｜中觀概念（共5段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh10p6-src">持諸華、香、瓔珞、末香、澤香、燒香、塗香、衣服、幢蓋，向釋迦牟尼佛所。到已，頭面禮佛足，一面立。</td><td>（十方菩薩）持著各種香華、瓔珞、末香、澤香、燒香、塗香、衣服、幢蓋等供具，前往釋迦牟尼佛的住處。到達之後，以頭面觸地、頂禮佛足，然後退到一旁站立。</td><td class="bh10p6-guan"><b>經文標宗——身儀即是修行道場</b>——經文表層僅記載禮敬的動作，論主卻獨獨挑出「頭面禮佛足」與「一面立」二句起論，暗示這兩個看似尋常的身儀動作，實則是「以身相演繹中觀」的實修場域，為全品「事相→心法→中觀」三階解構預留伏筆。</td></tr><tr><td class="bh10p6-qa">問曰：應言「禮」，何以名「頭面禮足」？</td><td>有人問：只要說「禮拜」就可以了，為什麼一定要說成「頭面禮足」呢？</td><td class="bh10p6-guan"><b>設問——名相何以精確標定</b>——此問直指經文用詞的精確性：既然「禮」已足以表達敬意，為何要加上「頭面」與「足」這兩個具體部位？此問為下文揭示禮法等級與貴賤拓撲埋下線索。</td></tr><tr><td class="bh10p6-qa">答曰：人身中第一貴者頭，五情所著而最在上故；足第一賤，履不淨處，最在下故。是故以所貴禮所賤，貴重供養故。復次，有下、中、上禮：下者揖，中者跪，上者稽首；頭面禮足，是上供養。以是故佛毘尼中，下坐比丘兩手捉上坐兩足，以頭面禮。</td><td>回答說：人身之中最尊貴的部位是頭，因為眼耳鼻舌身等五種感官都依附其上，且位置最高；而足是最卑賤的部位，因為它踐踏不潔淨之處，且位置最低。因此，用自己最尊貴的頭，去禮敬對方最卑賤的足，正顯示出供養之隆重懇切。再者，禮法有下、中、上三等：下等是拱手作揖，中等是屈膝下跪，上等則是稽首叩地；「頭面禮足」正是稽首的具體展現，屬於最上等的供養。因此在佛所制定的戒律中，規定資淺的比丘要用兩手捧握資深比丘的雙足，以頭面觸地行禮。</td><td class="bh10p6-guan"><b>頭貴足賤——以最高禮最低的貴重供養</b>——論主以人體部位的價值座標立說：頭為至貴、足為至賤，禮敬的力度正取決於「貴禮賤」之間的落差有多大。三等禮法（揖、跪、稽首）的分級進一步確立「頭面禮足」在形式上即是最上供養；毘尼律儀中「下坐捉上坐足」的具體規定，則將這抽象的禮法落實為僧團中可被規範、可被實踐的日常行儀。</td></tr><tr><td class="bh10p6-qa">問曰：四種身儀：若坐、若立、若行、若臥，何以故一面立？</td><td>有人問：人的身儀共有坐、立、行、臥四種，為什麼（十方菩薩到了佛所之後）偏偏要選擇「一面立」呢？</td><td class="bh10p6-guan"><b>設問——四儀之中何以獨取立</b>——此問先撇開行與臥的顯而易見（行是尚未到達、臥是不敬），逼出真正的難點：既已到達且心懷恭敬，何以不選擇看似同樣恭敬、卻更為輕省的「坐」，而堅持「立」？此問為下文「五眾身心屬佛」的深義鋪路。</td></tr><tr><td class="bh10p6-qa">答曰：為來故不應行，為恭敬供養故不應臥，此事易明，何足問耶？應問「或坐、或立」。坐者，於供養不重；立者，恭敬供養法。復次，佛法中，諸外道出家及一切白衣，來到佛所皆坐。外道他法輕佛，故坐；白衣如客，是故坐；一切五眾身、心屬佛，是故立。若得道諸阿羅漢，如舍利弗、目連、須菩提等，所作已辦，是故聽坐；餘雖得三道，亦不聽坐，大事未辦，結賊未破故。譬如王臣，大有功勳故得坐。是諸菩薩中，雖有白衣，以從遠來供養佛，故立。</td><td>回答說：因為已經抵達，所以不應該還在「行走」；因為心懷恭敬供養，所以不應該「躺臥」——這兩點顯而易見，何必多問呢？真正該問的是「為何或坐、或立」。坐，對於供養而言顯得不夠隆重；立，才是恭敬供養應有的姿態。再者，在佛法之中，凡是外道出家人以及一切在家的白衣居士，來到佛的住處都是坐著的：外道信奉自己的教法，輕視佛陀，所以才坐；在家白衣如同賓客一般，所以也坐。唯有出家的五眾弟子，身、心都完全歸屬於佛，所以才站立。假使是已經證得阿羅漢果的聖者，例如舍利弗、目犍連、須菩提等人，由於修行的大事已經辦妥，所以特別聽許他們坐下；其餘雖然證得三道當中前二道的人，仍然不被允許坐下，因為修行的大事尚未辦完，煩惱之賊尚未破除的緣故。這就好比君王之臣子，唯有立下重大功勳者才得以獲賜坐席。而在這些前來的菩薩之中，雖然也有在家的白衣居士，但因為他們是從遙遠之地前來供養佛陀，所以同樣選擇站立，而非坐下。</td><td class="bh10p6-guan"><b>坐立揀擇——身心歸屬決定身儀</b>——論主先以「行、臥」易明帶過，逼出真正的辯證焦點在「坐與立」之間；再以外道、白衣皆坐，唯獨佛的五眾弟子因「身心屬佛」而立，揭示身儀的選擇並非隨意的禮貌姿態，而是修行者與佛之間關係深淺的具體投影。阿羅漢因「所作已辦」得坐、有學聖者因「結賊未破」仍立，更說明「坐」與「立」的價值高低並非固定不變的自性，而是隨修證因緣而顯的假名施設——這正是中觀「假名安立、隨緣顯現」之理在身儀上的具體展開。</td></tr></tbody></table><p class="bh10p6-note">卷十第6品「頭面禮足·一面立」：十方菩薩到佛所已，先以頭面觸地禮佛足，再退居一面而立。龍樹設兩番問答——第一番釋「何以名頭面禮足」，以頭貴足賤之拓撲、揖跪稽首三等禮法、毘尼律儀層層申明此禮即是「上供養」；第二番釋「何以一面立而非坐」，以外道白衣皆坐、唯五眾身心屬佛故立、羅漢所作已辦故聽坐等辨析，顯示身儀之揀擇實為修證因緣之投影。經在最頂，二問二答俱全。　中觀關鍵詞：貴賤假名施設 三等禮法即上供養 身心屬佛 坐立非自性 隨緣顯現</p></div></div>
+<script id="wy-bh10p6-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh10p6Btn"),BOX=document.getElementById("bh10p6Box"),MODAL=document.getElementById("bh10p6Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=5;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var z=document.getElementById("c10p6Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh10p6Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH10P6:END-->
 </body></html>
