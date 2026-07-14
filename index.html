@@ -2416,4 +2416,55 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH10P9:END-->
+<!--WY-BH10P10:BEGIN-->
+<style id="wy-bh10p10-css">
+.bh10p10-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh10p10-fabbox.show{display:block;}
+.bh10p10-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh10p10-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh10p10-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh10p10-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh10p10-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh10p10-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh10p10-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh10p10-modal.open{display:flex;}
+.bh10p10-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh10p10-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh10p10-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh10p10-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh10p10-close:hover{background:#dde2e6;}
+.bh10p10-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh10p10-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh10p10-tbl th,.bh10p10-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh10p10-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh10p10-tbl thead th:nth-child(1){width:32%;}.bh10p10-tbl thead th:nth-child(2){width:41%;}.bh10p10-tbl thead th:nth-child(3){width:27%;}
+.bh10p10-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh10p10-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh10p10-guan{background:#eef2f5;color:#37505f;}
+.bh10p10-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh10p10-tbl tbody tr:nth-child(even) td.bh10p10-guan{background:#e8eef2;}
+.bh10p10-tbl tbody tr:nth-child(even) td.bh10p10-qa{background:#e7ecdb;}
+.bh10p10-tbl b{color:#8b2500;}
+.bh10p10-guan b{color:#2f6b5a;}
+.bh10p10-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh10p10-note b{color:#8b2500;}
+@media(max-width:900px){.bh10p10-fabbox{right:14px;}.bh10p10-tbl{font-size:11px;}.bh10p10-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh10p10-fabbox" id="bh10p10Box"><button class="bh10p10-btn" id="bh10p10Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh10p10-ic">譯</span><span class="bh10p10-ls"><span class="bh10p10-l1">本品 · 原文·白話·中觀</span><span class="bh10p10-l2">白話翻譯表</span></span></button></div><div class="bh10p10-modal" id="bh10p10Modal" role="dialog" aria-modal="true"><div class="bh10p10-card"><button class="bh10p10-close" id="bh10p10Close" type="button" aria-label="關閉">×</button><h3>卷十 · 第10品 白話翻譯表（千葉寶華之釋經解構）</h3><p class="sub">原文↔白話↔中觀概念 逐段對照 · 大智度論卷十・第10品・千葉寶華之釋經解構</p><table class="bh10p10-tbl"><caption>千葉寶華之釋經解構 · 原文｜白話翻譯｜中觀概念（共3段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh10p10-src">一一華上皆有菩薩，結加趺坐，說六波羅蜜；聞此法者，畢至阿耨多羅三藐三菩提。</td><td>每一朵蓮花上都坐著一位菩薩，結跏趺坐，宣說六波羅蜜法；凡是聽聞這個法門的眾生，最終必定能到達無上正等正覺的境界。</td><td class="bh10p10-guan"><b>一多相即——性空故遍在</b>——每朵蓮花各自顯現一位菩薩、各自圓滿宣說六度，數量雖多，所說之法卻無二無別；正因諸法性空，才能不相妨礙地一時俱現、遍滿十方，這正是中觀「一即一切、一切即一」的具體示現。</td></tr><tr><td class="bh10p10-qa">問曰：上佛以舌相光明化作千葉寶華，一一華上皆有坐佛；今何以故一一華上皆有坐菩薩？</td><td>有人問：前面提到佛以舌相放出光明，化作有一千片花瓣的寶蓮花，每一朵花上都坐著一尊佛；那麼現在為什麼變成每一朵花上坐的卻是菩薩呢？</td><td class="bh10p10-guan"><b>設問——同一神通，異相示現</b>——此問點出同樣「化華遍滿十方」的神通事件，前後卻示現不同的果位身（佛／菩薩），依常識分別心來看似乎前後矛盾，實則正是下文所要開顯的緣起施設之理。</td></tr><tr><td class="bh10p10-qa">答曰：上是佛所化華，故有坐佛；此是普明菩薩所供養華，是故有坐菩薩。復次，上諸眾生應見坐佛得度，今此眾生應見坐菩薩得度。結加趺坐，說六波羅蜜；聞此法者，畢至阿耨多羅三藐三菩提，如先說。</td><td>回答說：前面那朵寶蓮花，是佛親自以神通所變化出來的花，所以花上坐的是佛；而這一朵，則是普明菩薩用來供養十方諸佛的花，所以花上坐的是菩薩。再者，前面那些眾生的根機，應該要見到佛坐在花上才能得度；而這裡的這些眾生，則是應該要見到菩薩坐在花上才能得度。菩薩同樣結跏趺坐，宣說六波羅蜜；凡是聽聞這個法門的眾生，最終必定能到達無上正等正覺的境界，正如前面所說的一樣。</td><td class="bh10p10-guan"><b>能所皆是緣起施設——身無定相，隨機而現</b>——論主的解答並非訴諸神通位階高低，而是回到「誰化此華」與「眾生根機為何」兩個緣起條件：花因誰所化而有佛菩薩之別，眾生因根機不同而所見亦異，二者皆是隨緣安立的假名施設，並非佛、菩薩果位本身有固定不變的「相」，此即中觀「隨緣顯現、法無定相」之義。</td></tr></tbody></table><p class="bh10p10-note">卷十第10品「千葉寶華之釋經解構」：承接前品千葉寶華遍滿十方，此品進一步追問：同樣是化華供養的神通事件，為何前者華上坐佛、此處華上卻坐菩薩？論主答以「能化之因」與「所度之機」二層緣起解構——花因誰所化而有佛菩薩之別，眾生因根機不同而所見亦異，說明果位身相並無固定自性，一切隨緣施設。經在最頂，一問一答俱全、問在答前。　中觀關鍵詞：隨緣顯現 法無定相 緣起施設 能所皆空</p></div></div>
+<script id="wy-bh10p10-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh10p10Btn"),BOX=document.getElementById("bh10p10Box"),MODAL=document.getElementById("bh10p10Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=9;
+/*BHPLACE*/function place(){var z=document.getElementById("c10p10Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh10p10Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH10P10:END-->
 </body></html>
