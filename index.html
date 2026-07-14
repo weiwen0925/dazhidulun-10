@@ -1957,4 +1957,55 @@ if(toc&&"IntersectionObserver" in window){
 }else{var ref=function(){var t=toc?toc.getBoundingClientRect().bottom:600;show(t>60);};window.addEventListener("scroll",ref,{passive:true});ref();}
 })();</script>
 <!--WY-BHALL10:END-->
+<!--WY-BH10P1:BEGIN-->
+<style id="wy-bh10p1-css">
+.bh10p1-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh10p1-fabbox.show{display:block;}
+.bh10p1-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh10p1-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh10p1-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh10p1-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh10p1-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh10p1-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh10p1-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh10p1-modal.open{display:flex;}
+.bh10p1-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh10p1-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh10p1-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh10p1-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh10p1-close:hover{background:#dde2e6;}
+.bh10p1-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh10p1-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh10p1-tbl th,.bh10p1-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh10p1-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh10p1-tbl thead th:nth-child(1){width:32%;}.bh10p1-tbl thead th:nth-child(2){width:41%;}.bh10p1-tbl thead th:nth-child(3){width:27%;}
+.bh10p1-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh10p1-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh10p1-guan{background:#eef2f5;color:#37505f;}
+.bh10p1-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh10p1-tbl tbody tr:nth-child(even) td.bh10p1-guan{background:#e8eef2;}
+.bh10p1-tbl tbody tr:nth-child(even) td.bh10p1-qa{background:#e7ecdb;}
+.bh10p1-tbl b{color:#8b2500;}
+.bh10p1-guan b{color:#2f6b5a;}
+.bh10p1-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh10p1-note b{color:#8b2500;}
+@media(max-width:900px){.bh10p1-fabbox{right:14px;}.bh10p1-tbl{font-size:11px;}.bh10p1-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh10p1-fabbox" id="bh10p1Box"><button class="bh10p1-btn" id="bh10p1Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh10p1-ic">譯</span><span class="bh10p1-ls"><span class="bh10p1-l1">本品 · 原文·白話·中觀</span><span class="bh10p1-l2">白話翻譯表</span></span></button></div><div class="bh10p1-modal" id="bh10p1Modal" role="dialog" aria-modal="true"><div class="bh10p1-card"><button class="bh10p1-close" id="bh10p1Close" type="button" aria-label="關閉">×</button><h3>卷十 · 第1品 白話翻譯表（動靜等覺二疑）</h3><p class="sub">原文↔白話↔中觀概念 逐段對照 · 大智度論卷十・第一品・動靜等覺二疑</p><table class="bh10p1-tbl"><caption>動靜等覺二疑 · 原文｜白話翻譯｜中觀概念（共5段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh10p1-src">寶積佛報普明言：「善男子！西方度如恒河沙等世界，有世界名娑婆，是中有佛，號釋迦牟尼，今現在欲為諸菩薩摩訶薩說般若波羅蜜，是其神力。」</td><td>寶積佛回答普明菩薩說：「善男子！在西方，越過如恆河沙那樣多的世界之後，有一個世界名叫娑婆，那裡有一尊佛，名號釋迦牟尼，如今正要為諸菩薩摩訶薩演說般若波羅蜜，這是他（釋迦牟尼佛）的神力所致。」</td><td class="bh10p1-guan"><b>經文標宗——「神力」一詞埋下全品辯證</b>——寶積佛僅以「是其神力」四字，將普明菩薩能遙見娑婆、聽聞般若的因緣，歸諸釋迦牟尼佛。這句看似平常的答話，卻讓論主龍樹從中逼出兩個難題：佛既常入甚深禪定（極靜），何以能開口說法（極動）？諸佛既平等無二（等覺），寶積佛為何獨將此功歸於釋迦一佛？兩問看似分歧，實則同歸於「緣起性空」一義。</td></tr><tr><td class="bh10p1-qa">問曰：佛譬如須彌山，不為大海水波所動，今何以答普明？是則動相。攝心則無語，散心則有說。說法從覺觀生，覺觀麁事，佛不應有此麁事！</td><td>有人問：佛就好比須彌山，不會被大海的波浪所動搖；如今卻開口回答普明菩薩，這豈不是「動」的表現嗎？收攝心念便不會說話，心念散動才會有言說；而說法必然從覺觀（思惟分別）生起，覺觀是粗動之事，佛不應當有這種粗動的表現才對！</td><td class="bh10p1-guan"><b>設難——體用如何並存</b>——此問把佛的「甚深禪定（體）」與「開口說法（用）」對立起來，認定「動」必然源於覺觀粗事，因而質疑佛不應說法。問題的癥結，在於把「動」與「靜」當作互斥的自性狀態，尚未看到二者可在因緣中並存不悖。</td></tr><tr><td class="bh10p1-qa">答曰：佛雖入深禪定，不為世事所動，今以大慈悲心憐愍眾生，為之說法斷疑。 如須彌山王，小風則不能動，若隨藍風至則大動散；佛亦如是，有大慈悲風來，憐愍心動，散身無數，入五道教化眾生，或作天身乃至畜生。 復次，佛實不動常入禪定，先世福德因緣故，身邊出聲，應物如響；如天伎樂，自然發聲。又如摩尼珠，隨人所欲，種種與之，若欲衣被、飲食、音樂，自恣所須，自然皆得；佛亦如是，從其身邊諸毛孔中自然有聲，隨心說法，是中佛無憶想，亦無分別。 如說《密迹金剛經》中，佛有三密：身密、語密、意密。一切諸天人皆不解、不知。有一會眾生，或見佛身黃金色，白銀色，諸雜寶色；有人見佛身一丈六尺，或見一里、十里、百千萬億，乃至無邊無量遍虛空中，如是等名身密。語密者，有人聞佛聲一里，有聞十里、百千萬億無數無量遍虛空中；有一會中，或聞說布施，或有聞說持戒，或聞說忍辱、精進、禪定、智慧，如是乃至十二部經、八萬法聚，各各隨心所聞，是名語密。 是時目連心念：「欲知佛聲近遠。」即時以己神足力，至無量千萬億佛世界而息，聞佛音聲如近不異。所息世界，其佛與大眾方食。彼土人大，目連立其鉢緣，彼佛弟子問其佛言：「此人頭虫從何所來？著沙門被服而行！」其佛報言：「勿輕此人！此是東方過無量佛土，有佛名釋迦牟尼，此是彼佛神足弟子。」彼佛問：「目度伽略子！汝何以來此？」目連答言：「我尋佛音聲故來至此。」彼佛告目連：「汝尋佛聲，過無量億劫，不能得其邊際。」 復次，佛出世，為斷眾生疑故為說法，此不應難！如不應問曰：「何以除闇？」佛亦如是。不應問佛何以故答！</td><td>回答說：佛雖然入於甚深禪定，不被世間之事所動搖，但如今以大慈悲心憐愍眾生，為眾生說法以斷除疑惑。 就好比須彌山王，微小的風吹不動它，但若「隨藍風」（劫末的猛烈狂風）一到，便能將它吹得四散崩解；佛也是如此——有大慈悲的風吹來，佛的憐愍之心便隨之而動，散現無數色身，進入五道之中教化眾生，甚至化現為天身乃至畜生之身。 再者，佛其實並未真的動搖，仍常入於禪定之中；只因往昔世世積累的福德因緣，身邊自然發出聲音，如回聲一般應和外物；就像天上的伎樂，不假造作自然發聲一樣。又好比摩尼寶珠，隨人心中所想要的，種種東西都能給予——若想要衣服、飲食、音樂，只要心生渴望，自然都能得到；佛也是這樣，從祂身邊的每一個毛孔中自然發出聲音，隨眾生心意而說法，此中佛本身並無憶想，也無分別造作。 就像《密迹金剛經》中所說，佛有三種祕密：身密、語密、意密，一切諸天人都不能理解、不能知曉。在同一場法會中的眾生，有人見到佛身是黃金色，有人見是白銀色，或種種雜寶色；有人見佛身高一丈六尺，有人見一里、十里，乃至百千萬億，甚至無邊無量遍滿虛空——這些都稱為「身密」。所謂「語密」，是指有人在一里外聽聞佛的聲音，有人在十里、百千萬億里，乃至無數無量遍滿虛空之處都能聽聞；同一場法會中，有人聽到的是講布施，有人聽到的是講持戒，有人聽到的是講忍辱、精進、禪定、智慧，乃至十二部經、八萬法聚，各人隨自己的心而聽聞不同的內容，這稱為「語密」。 當時目犍連心裡想：「我想知道佛的聲音能傳多遠。」於是立刻運用自己的神足通之力，飛到無量千萬億佛世界之外才停下腳步。可是聽聞佛的音聲，還是如同在近處一樣毫無差異。他所停留的那個世界，那裡的佛正與大眾一同用膳。那個國土的人身形高大，目犍連只能站在對方的鉢緣上。那尊佛的弟子便問佛說：「這個頭上生蟲子般大小的人是從哪裡來的？竟然穿著沙門的衣服行走！」那尊佛回答說：「不要輕視他！他是從東方過無量佛土之外來的，那裡有一尊佛名叫釋迦牟尼，這位就是那尊佛座下具足神足通的弟子。」那尊佛便問：「目犍連！你為什麼來到這裡？」目犍連回答：「我是為了尋找佛聲音的盡頭，才來到這裡的。」那尊佛告訴目犍連：「你若想追尋佛的聲音，就算經過無量億劫，也不能找到它的邊際。」 再者，佛出現於世間，本是為了斷除眾生的疑惑而說法，這一點是不應該被質難的！就好比不應該問：「光明為什麼能夠除去黑暗？」（這是自然而然的事）佛也是如此，不應該去追問佛為什麼要回答眾生的疑問！</td><td class="bh10p1-guan"><b>破動靜對立——動因非覺觀，乃大慈悲</b>——答文並不否認佛「動」，而是重新界定動的來源：世間八風（毀譽等）動不了佛，但大慈悲一到，佛便隨緣示現。須彌山王喻點出：同一座山，對「小風」與「隨藍風」呈現截然不同的相狀，可見「動與不動」並非山的自性，而是隨緣顯現的假名；同理，佛之「動而說法」與「靜入禪定」亦非對立自性，而是同一因緣所現的兩種相。自然應聲喻與摩尼珠喻，進一步說明佛說法「無憶想、無分別」——非由覺觀造作而動，而是隨眾生根機自然感應，如同鐘遇扣而鳴、鳴而無心。三密一節說明佛之身、語、意密不可思議，隨眾生心量各現差異之相，正顯諸法「無自性、隨緣顯現」之理；目連尋聲一節，以「窮劫不能得佛聲邊際」極言佛功德之無量無邊，非凡夫思量所能測度。末段「法爾如是」以光明破闇為喻，說明佛之說法斷疑本是隨順因緣的必然，不應以自性見去追問「為何」——這正是中觀「不可言說而如實顯現」的深意。</td></tr><tr><td class="bh10p1-qa">問曰：諸佛等故，名為等覺，今何以稱言「是彼神力」？</td><td>有人問：因為諸佛平等無二，所以稱為「等覺」；既然如此，如今為什麼要說「這是他（釋迦牟尼佛）的神力」呢？</td><td class="bh10p1-guan"><b>設難——平等中為何有偏舉</b>——此問直指「等覺」與「獨歸功於一佛」之間表面的張力：若諸佛功德平等，寶積佛何必將普明能見娑婆之事，特別歸功於釋迦牟尼佛？這觸及佛與佛之間「因緣關係」的問題，也埋下下文破斥「神我論」的伏筆。</td></tr><tr><td class="bh10p1-qa">答曰：示無吾我，彼此滅嫉慢故。 復次，世界有天常求尊勝，憍慢法故，自言天地、人物，是我化作。如梵天王謂諸梵言：「我作汝等。」毘紐天言：「世間有大富貴名聞人，皆是我身威德力分，我能成就世間，亦能破壞世間，世間成壞皆是我作。」 有如是天，破因緣法相；諸佛實語不破因緣法相，故言「是彼佛神力」。</td><td>回答說：這是為了顯示「無我」，滅除彼此之間的嫉妒與傲慢之心。 再者，世間有些天神常自求尊貴殊勝，因憍慢之心而自稱天地萬物、一切人物，都是自己所化生出來的。例如梵天王對諸梵天說：「是我創造了你們。」毘紐天則說：「世間凡是大富大貴、名聞遐邇的人，都是憑藉我自身的威德之力分化而成；我既能成就世間，也能毀壞世間，世間的成、壞都是我造作出來的。」 有這樣（自稱一切皆我所造）的天神，正是破壞了因緣法的真實相；而諸佛所說皆是真實語，不破壞因緣法相，所以才說「這是他（釋迦）佛的神力」。</td><td class="bh10p1-guan"><b>破神我論——因緣與自性造物主之別</b>——寶積佛將功歸於釋迦，並非因為釋迦比自己尊貴，而是刻意「示無吾我」，以消除諸佛之間可能被誤解的高下嫉慢之心，這正是「等覺」的真實展現——不執一己之功。論主隨即以外道天神「自言一切皆我所作」為對照：梵天、毘紐天自誇創造世間、主宰成壞，這正是執有一個實體、恆常、全能的「大我」（自性見）的極致妄想，違背了「此有故彼有，此生故彼生」的因緣法相。諸佛所說的「是彼神力」，恰恰相反——是如實承認當下的因緣（此時此地正是釋迦度化之因緣），不壞因緣法相，故稱為「實語」。這正是中觀「隨順緣起、不壞假名」與「破自性造物主見」的雙重展現。</td></tr></tbody></table><p class="bh10p1-note">卷十第1品「動靜等覺二疑」：寶積佛答普明「是其神力」一句，龍樹設兩番問答——第一番釋佛常入禪定（靜）卻開口說法（動）之疑，以大慈悲心、須彌山王喻、自然應聲、三密、目連尋聲、法爾如是層層化解；第二番釋諸佛平等（等覺）何以獨歸功釋迦之疑，以示無吾我、破外道神我論、不壞因緣法相作答。經在最頂，二問二答俱全。　中觀關鍵詞：動靜體用不二 大慈悲隨緣示現 無自性隨緣顯現 破神我論 因緣法相不壞</p></div></div>
+<script id="wy-bh10p1-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh10p1Btn"),BOX=document.getElementById("bh10p1Box"),MODAL=document.getElementById("bh10p1Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=0;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var z=document.getElementById("c10p1Box"),eb=document.querySelector(".wy-ebox"),b=null;if(z){var r=z.getBoundingClientRect();if(r.height>4)b=Math.round(window.innerHeight-r.top)+8;}if(b===null&&eb){var r2=eb.getBoundingClientRect();if(r2.height>4)b=Math.round(window.innerHeight-r2.top)+8;}if(b!==null)BOX.style.bottom=b+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh10p1Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH10P1:END-->
 </body></html>
